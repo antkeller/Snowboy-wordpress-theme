@@ -1,10 +1,10 @@
-/* ==========================================================================
-   MAIN.SCSS
-   ========================================================================== */
+// ==========================================================================
+// MAIN.SCSS
+// ==========================================================================
 
 /**
- * MervinMfg WordPress Theme Template - http://www.mervin.com
- * Author: brian.behrens@mervin.com - http://www.mervin.com
+ * Snowboy Productions WordPress Theme Template - http://www.snowboyproductions.us
+ * Author: Tony Keller - http://www.antkeller.com
  *
  * app.main.css & app.main.min.css are compiled using the imports from this file.
  *
@@ -26,3 +26,6 @@
 @import "base/typography";
 
 // Components
+
+// Libraries
+@import "lib/bootstrap";
