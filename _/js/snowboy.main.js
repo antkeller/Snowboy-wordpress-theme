@@ -1,15 +1,23 @@
 /**
- * MervinMfg WordPress Theme Template - http://www.mervin.com
- * Author: brian.behrens@mervin.com - http://www.mervin.com
+ * 2015 Snowboy Productions WordPress Theme Template
  */
 
- var APP = APP || {};
+var SNOWBOY = SNOWBOY || {};
 
-APP.Main = {
+SNOWBOY.Main = {
 	config: {},
 	init: function () {
 		var self = this;
 	},
+  init: function () {
+		var self, $body;
+		self = this;
+		$body = $('body');
+		// init featured slider
+		if ($body.hasClass('home')) {
+			new SNOWBOY.FeaturedSlider();
+    }
+  },
 	utilities: {
 		cookie: {
 			getCookie: function (name) {

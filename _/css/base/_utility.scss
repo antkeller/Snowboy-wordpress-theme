@@ -51,12 +51,12 @@
         display: none;
     }
 }
-@media screen and (min-width: $bp-small) {
+@media screen and (min-width: $breakpoint-small) {
     .responsive-check .breakpoint-small {
         display: block;
     }
 }
-@media screen and (min-width: $bp-med) {
+@media screen and (min-width: $breakpoint-medium) {
     .responsive-check {
         .breakpoint-small {
             display: none;
@@ -66,7 +66,7 @@
         }
     }
 }
-@media screen and (min-width: $bp-large) {
+@media screen and (min-width: $breakpoint-large) {
     .responsive-check {
         .breakpoint-small,
         .breakpoint-medium {

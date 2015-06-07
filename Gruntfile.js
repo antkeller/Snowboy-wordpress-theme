@@ -8,7 +8,10 @@ module.exports = function (grunt) {
         '_/js/lib/GSAP/TweenMax.js',
         '_/js/lib/GSAP/plugins/ScrollToPlugin.js',
         '_/js/lib/jquery.fitvids-1.1.0.js',
-        '_/js/app.main.js',
+        '_/js/lib/owl.carousel.js',
+        '_/js/lib/jquery.unveil.js',
+        '_/js/snowboy.main.js',
+        '_/js/modules/*.js',
         '_/js/components/*.js'
     ];
     // PROJECT CONFIG
@@ -17,7 +20,7 @@ module.exports = function (grunt) {
         sass: {
             dev: {
                 files: {
-                    '_/compiled/app.main.css': '_/css/app.main.scss'
+                    '_/compiled/snowboy.main.css': '_/css/snowboy.main.scss'
                 },
                 options: {
                     style: 'expanded',
@@ -30,7 +33,7 @@ module.exports = function (grunt) {
             },
             prod: {
                 files: {
-                    '_/css/app.main.css': '_/css/app.main.scss'
+                    '_/css/snowboy.main.css': '_/css/snowboy.main.scss'
                 },
                 options: {
                     style: 'compact',
@@ -44,8 +47,8 @@ module.exports = function (grunt) {
         concat: {
             prod: {
                 files: {
-                    '_/js/app.header.min.js': headerScripts,
-                    '_/js/app.footer.min.js': footerScripts
+                    '_/js/snowboy.header.min.js': headerScripts,
+                    '_/js/snowboy.footer.min.js': footerScripts
                 }
             },
         },
@@ -55,7 +58,7 @@ module.exports = function (grunt) {
                     banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Mervin Mfg. | mervin.com */\n'
                 },
                 files: {
-                    '_/css/app.main.min.css': ['_/css/app.main.css']
+                    '_/css/snowboy.main.min.css': ['_/css/snowboy.main.css']
                 }
             }
         },
@@ -65,8 +68,8 @@ module.exports = function (grunt) {
             },
             prod: {
                 files: {
-                    '_/js/app.header.min.js': ['_/js/app.header.min.js'],
-                    '_/js/app.footer.min.js': ['_/js/app.footer.min.js']
+                    '_/js/snowboy.header.min.js': ['_/js/snowboy.header.min.js'],
+                    '_/js/snowboy.footer.min.js': ['_/js/snowboy.footer.min.js']
                 }
             }
         },

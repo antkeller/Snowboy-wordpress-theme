@@ -21,11 +21,11 @@
 
 	<!-- JavaScript includes -->
 <?php include '_/inc/footer-includes.php' ?>
-	
+
 	<!-- Init the main JS -->
 	<script type="text/javascript">
 		$(document).ready(function(){
-			APP.Main.init();
+			SNOWBOY.Main.init();
 		});
 	</script>
 	<!-- Social Media Includes -->

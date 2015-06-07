@@ -3,9 +3,9 @@
  * Author: brian.behrens@mervin.com - http://www.mervin.com
  */
 
- var APP = APP || {};
+ var SNOWBOY = SNOWBOY || {};
 
-APP.Component = {
+SNOWBOY.Component = {
 	config: {},
 	init: function () {
 		var self = this;

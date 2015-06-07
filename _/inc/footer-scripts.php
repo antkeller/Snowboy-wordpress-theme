@@ -3,5 +3,8 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/GSAP/TweenMax.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/GSAP/plugins/ScrollToPlugin.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/jquery.fitvids-1.1.0.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/app.main.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/components/app.component.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/owl.carousel.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/jquery.unveil.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/snowboy.main.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/modules/snowboy.featured-slider.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/components/snowboy.component.js"></script>

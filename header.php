@@ -47,8 +47,8 @@
 	<?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
-	<div id="wrapper">
-		<header id="header" role="banner">
+	<div id="wrapper" class="container-fluid">
+		<header id="header" class="row" role="banner">
 			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 			<div class="description"><?php bloginfo( 'description' ); ?></div>
 		</header>
