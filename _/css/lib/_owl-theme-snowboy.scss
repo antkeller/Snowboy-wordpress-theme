@@ -1,11 +1,7 @@
-// ==========================================================================
-// LIB/_OWL-THEME-SNOWBOY.SCSS
-// ==========================================================================
-
-// Snowboy Theme - Owl Carousel CSS File
-// Author: Tony Keller - antkeller.com
-
-.owl-theme-libtech {
+/*
+ * 	Snowboy theme - Owl Carousel CSS File
+ */
+ .owl-theme-snowboy {
   overflow: hidden;
 
   .owl-nav {
@@ -98,7 +94,7 @@
   }
 }
 
-.no-touch .owl-theme-libtech {
+.no-touch .owl-theme-snowboy {
   &:hover,
   &:focus {
     .owl-nav {

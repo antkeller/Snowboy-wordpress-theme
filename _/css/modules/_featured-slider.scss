@@ -1,0 +1,56 @@
+// ==========================================================================
+// MODULES/_FEATURED-SLIDER.SCSS
+// ==========================================================================
+
+.featured-slider {
+  padding: 20px 0;
+
+  .section-content {
+    max-width: 100%;
+    padding: 0;
+
+    .slider-wrapper {
+      padding: 0 15px;
+    }
+  }
+
+  img {
+    height: auto;
+    width: 100%;
+
+    &.lazy {
+      @include transition(opacity, 300ms);
+      @include vendorize(opacity, 0);
+
+      &.loaded {
+        @include vendorize(opacity, 1);
+      }
+    }
+  }
+
+  .slide {
+    p {
+      padding-top: 10px;
+      text-align: center;
+    }
+  }
+
+  .owl-carousel {
+    display: block;
+
+    .owl-nav [class*='owl-'] {
+      top: 40%;
+      display: none; // next and prev arrows on slides
+    }
+
+    .owl-dots {
+      padding-top: 5px;
+    }
+
+
+  }
+
+  .slider-link {
+    display: block;
+  }
+}

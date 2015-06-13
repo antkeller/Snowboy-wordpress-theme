@@ -13,6 +13,7 @@
  */
 
 // Helpers
+@import "helpers/mixins";
 @import "helpers/variables";
 @import "helpers/reset";
 
@@ -29,3 +30,6 @@
 @import "lib/bootstrap";
 @import "lib/owl-carousel";
 @import "lib/owl-theme-snowboy";
+
+// Modules
+@import "modules/featured-slider";

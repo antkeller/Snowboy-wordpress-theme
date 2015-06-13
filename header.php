@@ -49,9 +49,11 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="container-fluid">
 		<header id="header" class="row" role="banner">
-			<h1><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<div class="description"><?php bloginfo( 'description' ); ?></div>
+			<h1 class="col-xs-12 col-sm-3"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
+			<nav id="nav" class="col-xs-12 col-sm-9" role="navigation">
+				<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+			</nav>
+			<div class="site-description col-xs-12 col-sm-9">
+				<h3>Making shit radder than it was yesterday... since 1997.</h3>
+			</div>
 		</header>
-		<nav id="nav" role="navigation">
-			<?php wp_nav_menu( array('menu' => 'primary') ); ?>
-		</nav>

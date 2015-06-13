@@ -30,7 +30,7 @@ SNOWBOY.FeaturedSlider.prototype = {
     // build new
     self.carousel.owlCarousel({
       autoplay: self.config.autoRotate,
-      autoplayHoverPause: true,
+      autoplayHoverPause: false,
       autoplayTimeout: 8000,
       dots: true,
       items: 1,
@@ -38,5 +38,5 @@ SNOWBOY.FeaturedSlider.prototype = {
       nav: true,
       navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>']
     });
-  },
+  }
 };
