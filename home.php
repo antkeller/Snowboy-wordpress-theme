@@ -52,15 +52,15 @@ Template Name: Home
   </div><!-- .section-content -->
 </section><!-- .about-section -->
 <section id="services" class="services-section row">
-  <div class="section-content col-xs-12 col-md-10 col-md-offset-1">
-    <div class="services-text">
+  <div class="section-content col-xs-12">
+    <div class="services-text col xs-12 col-md-10 col-md-offset-1">
       <h2 class="section-heading">Services</h2>
 
       <?php
         $servicesText = get_field('snowboy_services_text');
         echo $servicesText; ?>
     </div><!-- .services-text -->
-    <div class="services-list col-xs-12">
+    <div class="services-list col xs-12">
 
       <?php if (have_rows('snowboy_services_list')) :
         while (have_rows('snowboy_services_list')) : the_row(); ?>
@@ -94,13 +94,34 @@ Template Name: Home
   </div><!-- .section-content -->
 </section><!-- .middle-content -->
 
-<section id="galleries" class="galleries-section row">
+<section id="gallery" class="galleries-section row">
   <div class="section-content col-xs-12">
+    <h2 class="section-heading">Event Galleries</h2>
+    <ul class="row">
+      <li class="col-xs-12 col-sm-4">
+        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery1.png" alt="" />
+          <img src="" alt="" />
+          <h4>Urban</h4>
+        </a>
+      </li>
+      <li class="col-xs-12 col-sm-4">
+        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery3.png" alt="" />
+          <img src="" alt="" />
+          <h4>Resort</h4>
+        </a>
+      </li>
+      <li class="col-xs-12 col-sm-4">
+        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery2.png" alt="" />
+          <img src="" alt="" />
+          <h4>Skate</h4>
+        </a>
+      </li>
+
   </div><!-- .section-content -->
 </section><!-- .home-galleries -->
 
 <section id="clients" class="clients-section row">
-  <div class="section-content col-xs-12 col-md-10 col-md-offset-1">
+  <div class="section-content col-xs-12">
     <h2 class="section-heading">Client List</h2>
     <?php if (have_rows('snowboy_clients')) : ?>
 

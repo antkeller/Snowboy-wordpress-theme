@@ -54,6 +54,8 @@
 				<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 			</nav>
 			<div class="site-description col-xs-12 col-sm-9">
-				<h3>Making shit radder than it was yesterday... since 1997.</h3>
+				<?php
+	        $tagline = get_field('snowboy_site_tagline'); ?>
+				<h3><?php echo $tagline; ?></h3>
 			</div>
 		</header>

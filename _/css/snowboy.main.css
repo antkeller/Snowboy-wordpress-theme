@@ -44,9 +44,9 @@ a:hover, a:focus { color: #808080; }
   .responsive-check .breakpoint-medium { display: block; } }
 @media screen and (min-width: 992px) { .responsive-check .breakpoint-small, .responsive-check .breakpoint-medium { display: none; }
   .responsive-check .breakpoint-large { display: block; } }
-body { background: #000; color: #fff; padding: 30px; font-family: "Arial", Helvetica, Arial, sans-serif; font-size: .85em; }
+body { background: #000; color: #fff; padding: 30px; font-family: "Arial", Helvetica, Arial, sans-serif; font-size: .95em; }
 
-p { margin-bottom: 10px; line-height: 1.5; }
+p { margin-bottom: 20px; line-height: 1.5; }
 
 a { color: #fff; }
 a:hover, a:focus { color: #FF0000; }
@@ -78,11 +78,11 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 
 .section-heading { padding-bottom: 10px; text-transform: uppercase; text-align: center; }
 
-.about-section { padding-bottom: 20px; padding-top: 20px; text-align: center; }
+.about-section { padding-bottom: 10px; padding-top: 30px; text-align: center; }
 
-.services-section { padding-bottom: 20px; padding-top: 20px; text-align: center; }
+.services-section { padding-bottom: 30px; padding-top: 30px; text-align: center; }
 
-.follow-us { padding-top: 20px; }
+.follow-us { padding-top: 30px; padding-bottom: 10px; }
 .follow-us .follow-us-wrapper { text-align: center; }
 .follow-us .follow-us-wrapper h2 { text-align: right; display: inline-block; }
 .follow-us .follow-us-wrapper ul { display: inline-block; padding-left: 5px; vertical-align: middle; padding-bottom: 6px; }
@@ -91,7 +91,11 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .follow-us .follow-us-wrapper ul li span.facebook { background-position: -35px -10px; }
 .follow-us .follow-us-wrapper ul li span.instagram { background-position: 0 -10px; }
 
-.clients-section { padding-top: 20px; padding-bottom: 20px; text-align: center; }
+.galleries-section { padding-top: 30px; padding-bottom: 30px; }
+.galleries-section .section-heading { padding-bottom: 15px; }
+.galleries-section h4 { text-align: center; text-transform: uppercase; padding-top: 10px; font-size: 1.25em; }
+
+.clients-section { padding-top: 30px; padding-bottom: 30px; text-align: center; }
 .clients-section ul li { display: inline-block; margin-bottom: 5px; }
 .clients-section ul li a { text-transform: uppercase; padding: 5px; }
 .clients-section ul li:after { content: " / "; }
