@@ -35,7 +35,7 @@ SNOWBOY.FeaturedSlider.prototype = {
       dots: true,
       items: 1,
       loop: true,
-      nav: true,
+      nav: false, //switch to true to add prev and next arrows to slides
       navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>']
     });
   }

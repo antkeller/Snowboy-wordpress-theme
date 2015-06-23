@@ -3,54 +3,84 @@
 // ==========================================================================
 
 .featured-slider {
-  padding: 20px 0;
+  height: 100%;
+  position: relative;
+  clear: both;
 
   .section-content {
-    max-width: 100%;
-    padding: 0;
-
-    .slider-wrapper {
-      padding: 0 15px;
-    }
+    margin: 30px 0;
   }
 
-  img {
-    height: auto;
-    width: 100%;
+  .slide-list {
+    .slide-item {
+      background-position: 50% 50%;
+      background-repeat: none;
+      background-size: cover;
+      height: 100%;
+      overflow: hidden;
 
-    &.lazy {
-      @include transition(opacity, 300ms);
-      @include vendorize(opacity, 0);
-
-      &.loaded {
-        @include vendorize(opacity, 1);
+      a {
+        display: block;
+        height: 100%;
+        width: 100%;
       }
-    }
-  }
-
-  .slide {
-    p {
-      padding-top: 10px;
-      text-align: center;
-    }
-  }
-
-  .owl-carousel {
-    display: block;
-
-    .owl-nav [class*='owl-'] {
-      top: 40%;
-      display: none; // next and prev arrows on slides
     }
 
     .owl-dots {
       padding-top: 5px;
     }
-
-
   }
 
-  .slider-link {
-    display: block;
+  .caption {
+    p {
+      display: none;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-small) {
+
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  .featured-slider {
+    height: 500px;
+
+    .slide-list .slide-item {
+      height: 500px;
+    }
+
+    .caption {
+      p {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  .featured-slider {
+    height: 600px;
+
+    .slide-list {
+      .slide-item {
+        height: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  .featured-slider {
+    height: 650px;
+
+    .slide-list {
+      .slide-item {
+        height: 650px;
+      }
+    }
   }
 }
