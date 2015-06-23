@@ -35,6 +35,12 @@
 	}
 	add_action( 'after_setup_theme', 'html5reset_setup' );
 
+	if ( function_exists( 'add_image_size' ) ) {
+    // additional image sizes
+    add_image_size('square-medium', 300, 300, true);
+    add_image_size('rect-medium', 600, 400, true);
+}
+
 	// Scripts & Styles (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
 	function html5reset_scripts_styles() {
 		global $wp_styles;
@@ -159,20 +165,82 @@
 		);
 	}
 
+	// Register sidebars
 	add_action( 'widgets_init', 'register_my_sidebars' );
-	
-	function register_my_sidebars() {
-	/* Register the primary sidebar. */
-	register_sidebar(
-		array(
-			'id' => 'primary',
-			'name' => __( 'Primary Sidebar' ),
-			'before_widget' => '<div id="%1$s" class="widget %2$s">',
-			'after_widget' => '</div>',
-			'before_title' => '<h3 class="widget-title">',
-			'after_title' => '</h3>'
-		)
-	);
-}
 
+	function register_my_sidebars() {
+		// Register the primary sidebar.
+		register_sidebar(
+			array(
+				'id' => 'primary',
+				'name' => __( 'Primary Sidebar' ),
+				'before_widget' => '<div id="%1$s" class="widget %2$s">',
+				'after_widget' => '</div>',
+				'before_title' => '<h3 class="widget-title">',
+				'after_title' => '</h3>'
+			)
+		);
+	}
+
+	function register_custom_post_types() {
+    // Start Galleries
+    $labels = array(
+        'name' => _x('Galleries', 'post type general name'),
+        'singular_name' => _x('Gallery', 'post type singular name'),
+        'add_new' => _x('Add New', 'snowboy_galleries'),
+        'add_new_item' => __('Add New Gallery'),
+        'edit_item' => __('Edit Gallery'),
+        'new_item' => __('New Gallery'),
+        'all_items' => __('All Galleries'),
+        'view_item' => __('View Gallery'),
+        'search_items' => __('Search Galleries'),
+        'not_found' =>  __('No Galleries Found'),
+        'not_found_in_trash' => __('No Galleries Found In Trash'),
+        'parent_item_colon' => '',
+        'menu_name' => 'Galleries'
+    );
+    $args = array(
+        'labels' => $labels,
+        'public' => true,
+        'publicly_queryable' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'query_var' => true,
+        'rewrite' => array("slug" => 'galleries'),
+        'capability_type' => 'page',
+        'has_archive' => false,
+        'hierarchical' => false,
+        'menu_position' => null,
+        'supports' => array( 'title', 'editor', 'page-attributes', 'comments', 'thumbnail' )
+    );
+    register_post_type('snowboy_galleries',$args);
+    // start taxonamy for Galleries
+    $labels = array(
+        'name'                          => 'Categories',
+        'singular_name'                 => 'Category',
+        'search_items'                  => 'Search Category',
+        'popular_items'                 => 'Popular Categories',
+        'all_items'                     => 'All Categories',
+        'parent_item'                   => 'Parent Category',
+        'edit_item'                     => 'Edit Category',
+        'update_item'                   => 'Update Category',
+        'add_new_item'                  => 'Add New Category',
+        'new_item_name'                 => 'New Category',
+        'separate_items_with_commas'    => 'Separate Categories with commas',
+        'add_or_remove_items'           => 'Add or remove Categories',
+        'choose_from_most_used'         => 'Choose from most used Categories'
+    );
+    $args = array(
+        'label'                         => 'Categories',
+        'labels'                        => $labels,
+        'public'                        => true,
+        'hierarchical'                  => true,
+        'show_ui'                       => true,
+        'show_in_nav_menus'             => true,
+        'args'                          => array( 'orderby' => 'term_order' ),
+        'query_var'                     => true
+    );
+    register_taxonomy( 'snowboy_gallery_categories', 'snowboy_galleries', $args );
+	}
+	add_action( 'init', 'register_custom_post_types' );
 ?>

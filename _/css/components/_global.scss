@@ -5,7 +5,7 @@
 body {
   background: #000;
   color: $white;
-  padding: 30px;
+  padding: 30px 0;
   font-family: $bodyFont;
   font-size: .95em;
 }
@@ -32,10 +32,13 @@ h1, .h1   {
 h2, .h2    {
     line-height: 1.2;
     font-size: 1.75em;
+    font-family: $headingFont;
+    text-transform: uppercase;
 }
 
 h3, .h3   {
     line-height: 1.2;
+
 }
 
 h4, .h4   {
@@ -81,40 +84,48 @@ blockquote {
 }
 
 header {
-  padding: 20px 0;
+  margin: 20px 0;
+  position: relative;
+
+  h1 {
+    padding-bottom: 20px;
+  }
 
   nav {
     text-align: right;
     padding-bottom: 5px;
-    li {
-      display: inline-block;
-      margin-left: 10px;
 
-      a {
-        padding: 5px;
-        font-size: .85em;
-        text-transform: uppercase;
+    .menu {
+      text-align: center;
+      padding-bottom: 20px;
+
+      li {
+        display: inline-block;
+
+        a {
+          padding: 3px;
+          font-size: .7em;
+          text-transform: uppercase;
+        }
       }
     }
   }
 
   .site-description {
-    vertical-align: baseline;
 
     h3 {
-      font-family: $headingFont;
+      font-family: $taglineFont;
       font-weight: 400;
       letter-spacing: 1px;
       text-align: right;
       text-transform: uppercase;
-      font-size: 1.65em;
+      font-size: 1.25em;
     }
   }
 }
 
 #wrapper {
-  max-width: 960px;
-  padding: 15px 30px;
+  max-width: 1240px;
   margin: 0 auto;
   // border: 1px solid red;
 }
@@ -129,6 +140,7 @@ header {
   padding-bottom: 10px;
   padding-top: 30px;
   text-align: center;
+  clear: both;
 }
 
 .services-section {
@@ -218,6 +230,103 @@ header {
 
     li:last-child:after {
       content: "";
+    }
+  }
+}
+
+.contact-page {
+  padding-top: 20px;
+  padding-bottom: 30px;
+
+  .section-content {
+
+    form {
+      padding-top: 40px;
+    }
+  }
+}
+
+.shop-page {
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .section-content {
+    min-height: 600px;
+  }
+}
+
+
+.gallery {
+
+}
+
+
+@media screen and (min-width: $breakpoint-small) {
+  header {
+
+    nav {
+      .menu {
+        text-align: center;
+        padding-bottom: 20px;
+
+        li {
+          display: inline-block;
+
+          a {
+            padding: 5px;
+            font-size: .85em;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-medium) {
+  header {
+    nav {
+      .menu {
+        padding-bottom: 0;
+        text-align: right;
+      }
+    }
+
+    h1 {
+      padding-bottom: 0;
+    }
+
+    .site-description {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-large) {
+  body {
+    padding: 15px;
+  }
+
+  header {
+    .site-description {
+      font-size: 1.2em;
+    }
+  }
+
+  .contact-page {
+    .section-content {
+      min-height: 600px;
+
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  header {
+    .site-description {
+      font-size: 1.65em;
     }
   }
 }

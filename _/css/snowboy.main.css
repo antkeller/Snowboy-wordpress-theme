@@ -44,7 +44,7 @@ a:hover, a:focus { color: #808080; }
   .responsive-check .breakpoint-medium { display: block; } }
 @media screen and (min-width: 992px) { .responsive-check .breakpoint-small, .responsive-check .breakpoint-medium { display: none; }
   .responsive-check .breakpoint-large { display: block; } }
-body { background: #000; color: #fff; padding: 30px; font-family: "Arial", Helvetica, Arial, sans-serif; font-size: .95em; }
+body { background: #000; color: #fff; padding: 30px 0; font-family: "Arial", Helvetica, sans-serif; font-size: .95em; }
 
 p { margin-bottom: 20px; line-height: 1.5; }
 
@@ -53,7 +53,7 @@ a:hover, a:focus { color: #FF0000; }
 
 h1, .h1 { line-height: 1.2; }
 
-h2, .h2 { line-height: 1.2; font-size: 1.75em; }
+h2, .h2 { line-height: 1.2; font-size: 1.75em; font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; text-transform: uppercase; }
 
 h3, .h3 { line-height: 1.2; }
 
@@ -67,18 +67,19 @@ figcaption { font-style: italic; }
 
 blockquote { font-style: italic; border-left: 1px solid #808080; color: #808080; padding-left: 20px; margin-bottom: 20px; }
 
-header { padding: 20px 0; }
+header { margin: 20px 0; position: relative; }
+header h1 { padding-bottom: 20px; }
 header nav { text-align: right; padding-bottom: 5px; }
-header nav li { display: inline-block; margin-left: 10px; }
-header nav li a { padding: 5px; font-size: .85em; text-transform: uppercase; }
-header .site-description { vertical-align: baseline; }
-header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 400; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.65em; }
+header nav .menu { text-align: center; padding-bottom: 20px; }
+header nav .menu li { display: inline-block; }
+header nav .menu li a { padding: 3px; font-size: .7em; text-transform: uppercase; }
+header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 400; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.25em; }
 
-#wrapper { max-width: 960px; padding: 15px 30px; margin: 0 auto; }
+#wrapper { max-width: 1240px; margin: 0 auto; }
 
 .section-heading { padding-bottom: 10px; text-transform: uppercase; text-align: center; }
 
-.about-section { padding-bottom: 10px; padding-top: 30px; text-align: center; }
+.about-section { padding-bottom: 10px; padding-top: 30px; text-align: center; clear: both; }
 
 .services-section { padding-bottom: 30px; padding-top: 30px; text-align: center; }
 
@@ -101,22 +102,38 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .clients-section ul li:after { content: " / "; }
 .clients-section ul li:last-child:after { content: ""; }
 
-.container { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+.contact-page { padding-top: 20px; padding-bottom: 30px; }
+.contact-page .section-content form { padding-top: 40px; }
+
+.shop-page { padding-top: 30px; padding-bottom: 30px; }
+.shop-page .section-content { min-height: 600px; }
+
+@media screen and (min-width: 480px) { header nav .menu { text-align: center; padding-bottom: 20px; }
+  header nav .menu li { display: inline-block; }
+  header nav .menu li a { padding: 5px; font-size: .85em; text-transform: uppercase; } }
+@media screen and (min-width: 768px) { header nav .menu { padding-bottom: 0; text-align: right; }
+  header h1 { padding-bottom: 0; }
+  header .site-description { position: absolute; bottom: 0; right: 0; } }
+@media screen and (min-width: 992px) { body { padding: 15px; }
+  header .site-description { font-size: 1.2em; }
+  .contact-page .section-content { min-height: 600px; } }
+@media screen and (min-width: 1200px) { header .site-description { font-size: 1.65em; } }
+.container { margin-right: auto; margin-left: auto; padding-left: 10px; padding-right: 10px; }
 .container:before, .container:after { content: " "; display: table; }
 .container:after { clear: both; }
 @media (min-width: 768px) { .container { width: 750px; } }
 @media (min-width: 992px) { .container { width: 970px; } }
 @media (min-width: 1200px) { .container { width: 1170px; } }
 
-.container-fluid { margin-right: auto; margin-left: auto; padding-left: 15px; padding-right: 15px; }
+.container-fluid { margin-right: auto; margin-left: auto; padding-left: 10px; padding-right: 10px; }
 .container-fluid:before, .container-fluid:after { content: " "; display: table; }
 .container-fluid:after { clear: both; }
 
-.row { margin-left: -15px; margin-right: -15px; }
+.row { margin-left: -10px; margin-right: -10px; }
 .row:before, .row:after { content: " "; display: table; }
 .row:after { clear: both; }
 
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-left: 15px; padding-right: 15px; }
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 { position: relative; min-height: 1px; padding-left: 10px; padding-right: 10px; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 { float: left; }
 
@@ -589,14 +606,17 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .no-touch .owl-theme-snowboy:hover .owl-nav .owl-prev, .no-touch .owl-theme-snowboy:focus .owl-nav .owl-prev { left: 0; }
 .no-touch .owl-theme-snowboy:hover .owl-nav .owl-next, .no-touch .owl-theme-snowboy:focus .owl-nav .owl-next { right: 0; }
 
-.featured-slider { padding: 20px 0; }
-.featured-slider .section-content { max-width: 100%; padding: 0; }
-.featured-slider .section-content .slider-wrapper { padding: 0 15px; }
-.featured-slider img { height: auto; width: 100%; }
-.featured-slider img.lazy { -webkit-transition: opacity, 300ms; -o-transition: opacity, 300ms; transition: opacity, 300ms; -webkit-opacity: 0; -moz-opacity: 0; -ms-opacity: 0; -o-opacity: 0; opacity: 0; }
-.featured-slider img.lazy.loaded { -webkit-opacity: 1; -moz-opacity: 1; -ms-opacity: 1; -o-opacity: 1; opacity: 1; }
-.featured-slider .slide p { padding-top: 10px; text-align: center; }
-.featured-slider .owl-carousel { display: block; }
-.featured-slider .owl-carousel .owl-nav [class*='owl-'] { top: 40%; display: none; }
-.featured-slider .owl-carousel .owl-dots { padding-top: 5px; }
-.featured-slider .slider-link { display: block; }
+.featured-slider { height: 100%; position: relative; clear: both; }
+.featured-slider .section-content { margin: 30px 0; }
+.featured-slider .slide-list .slide-item { background-position: 50% 50%; background-repeat: none; background-size: cover; height: 100%; overflow: hidden; }
+.featured-slider .slide-list .slide-item a { display: block; height: 100%; width: 100%; }
+.featured-slider .slide-list .owl-dots { padding-top: 5px; }
+.featured-slider .caption p { display: none; }
+
+@media screen and (min-width: 768px) { .featured-slider { height: 500px; }
+  .featured-slider .slide-list .slide-item { height: 500px; }
+  .featured-slider .caption p { display: block; text-align: center; margin-top: 10px; margin-bottom: 10px; } }
+@media screen and (min-width: 992px) { .featured-slider { height: 600px; }
+  .featured-slider .slide-list .slide-item { height: 600px; } }
+@media screen and (min-width: 1200px) { .featured-slider { height: 650px; }
+  .featured-slider .slide-list .slide-item { height: 650px; } }

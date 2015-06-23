@@ -16,7 +16,18 @@ SNOWBOY.Main = {
 		// init featured slider
 		if ($body.hasClass('home')) {
 			new SNOWBOY.FeaturedSlider();
+			//fade gallery images on hover
+			jQuery('#gallery .gallery-link img').each(function(){
+					jQuery(this).hover(function(){
+							jQuery(this).fadeTo(200, 0.75);
+					}, function(){
+							jQuery(this).stop().fadeTo(500, 1);
+					});
+			});
     }
+		if ($body.hasClass('single-snowboy_galleries')) {
+			new SNOWBOY.Gallery();
+		}
   },
 	utilities: {
 		cookie: {

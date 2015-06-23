@@ -49,13 +49,11 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="container-fluid">
 		<header id="header" class="row" role="banner">
-			<h1 class="col-xs-12 col-sm-3"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
-			<nav id="nav" class="col-xs-12 col-sm-9" role="navigation">
+			<nav id="nav" class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3" role="navigation">
 				<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 			</nav>
-			<div class="site-description col-xs-12 col-sm-9">
-				<?php
-	        $tagline = get_field('snowboy_site_tagline'); ?>
-				<h3><?php echo $tagline; ?></h3>
+			<h1 class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8 col-lg-3 col-lg-pull-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
+			<div class="site-description col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3">
+				<h3>Making shit radder than it was yesterday... <span>since 1997.</span></h3>
 			</div>
 		</header>

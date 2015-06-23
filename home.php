@@ -11,7 +11,7 @@ Template Name: Home
   <section class="featured-slider row">
     <div class="section-content col-xs-12">
       <div class="slider-wrapper">
-        <div class="owl-carousel owl-theme-snowboy">
+        <div class="slide-list owl-carousel owl-theme-snowboy">
           <?php
             while(the_repeater_field('snowboy_featured_slider')):
               $sliderImage = get_sub_field('snowboy_featured_slider_image');
@@ -20,13 +20,16 @@ Template Name: Home
               $sliderCaption = get_sub_field('snowboy_featured_slider_caption');
   				?>
 
-          <div class="slide">
-            <div class="content">
+          <div class="content">
+            <div class="slide-item">
               <?php if($sliderUrl) : ?><a href="<?php echo $sliderUrl; ?>" class="slider-link"><?php else: ?><div class="slider-link"><?php endif; ?>
   						<img src="<?php bloginfo('template_directory'); ?>/_/img/featured-slider.gif" data-src="<?php echo $sliderImage['url']; ?>" alt="<?php echo $sliderAltText ?>" class="slider-img lazy" />
               <?php if($sliderUrl) : ?></a><?php else: ?></div><?php endif; ?>
+            </div>
+            <div class="caption">
               <?php echo $sliderCaption; ?>
             </div>
+            <div class="clearfix"></div>
           </div>
 
           <?php
@@ -89,7 +92,8 @@ Template Name: Home
         <li><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><span class="facebook"></span></a></li>
         <li><a href="https://twitter.com/snowboyus" target="_blank"><span class="twitter"></span></a></li>
       </ul>
-      <?php dynamic_sidebar( 'primary' ); ?>
+      <div class="row"><?php dynamic_sidebar( 'primary' ); ?></div>
+      <!-- <?php echo do_shortcode('[instagram-feed]'); ?> -->
     </div><!-- .sidebar -->
   </div><!-- .section-content -->
 </section><!-- .middle-content -->
@@ -98,25 +102,47 @@ Template Name: Home
   <div class="section-content col-xs-12">
     <h2 class="section-heading">Event Galleries</h2>
     <ul class="row">
-      <li class="col-xs-12 col-sm-4">
-        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery1.png" alt="" />
-          <img src="" alt="" />
-          <h4>Urban</h4>
-        </a>
-      </li>
-      <li class="col-xs-12 col-sm-4">
-        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery3.png" alt="" />
-          <img src="" alt="" />
-          <h4>Resort</h4>
-        </a>
-      </li>
-      <li class="col-xs-12 col-sm-4">
-        <a href="#"><img src="<?php bloginfo('template_directory'); ?>/_/img/placeholders/gallery2.png" alt="" />
-          <img src="" alt="" />
-          <h4>Skate</h4>
+
+
+
+<?php
+  $args = array(
+    'post_type' => 'snowboy_galleries',
+    'posts_per_page' => '3',
+    'order' => 'ASC'
+  );
+
+  $loop = new WP_Query( $args );
+  while ( $loop->have_posts() ) : $loop->the_post();
+    $pageSlug = $post->post_name;
+
+    switch ($pageSlug) {
+      case 'urban':
+        $postCat = "urban";
+        $galleryUrl = "/galleries/urban/";
+        break;
+      case 'resort':
+        $postCat = "resort";
+        $galleryUrl = "/galleries/resort/";
+        break;
+      case 'skate':
+        $postCat = "skate";
+        $galleryUrl = "/galleries/skate/";
+        break;
+      }
+?>
+
+      <li class="col-xs-12 col-ms-4 col-sm-4">
+        <a href="<?php echo $galleryUrl; ?>" class="gallery-link">
+          <?php the_post_thumbnail('rect-medium'); ?>
+          <h4><?php echo $postCat; ?></h4>
         </a>
       </li>
 
+<?php
+  endwhile; wp_reset_query();
+?>
+    </ul>
   </div><!-- .section-content -->
 </section><!-- .home-galleries -->
 
