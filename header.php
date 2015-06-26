@@ -36,7 +36,7 @@
 	<meta name="twitter:card" content="summary" />
 	<meta name="twitter:site" content="@XXXXXXXXXX" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-touch-icon-precomposed.png" />
+	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-icon-precomposed.png" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<?php include '_/inc/header-includes.php' ?>
