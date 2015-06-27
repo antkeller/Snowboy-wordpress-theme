@@ -12,6 +12,6 @@ get_header(); ?>
 	<h2>404</h2>
 	<p>Page not found</p>
 
-	<?php include get_template_directory() . '/_/inc/modules/featured-slider.php'; ?>
+	<?php include get_template_directory() . '/_/inc/modules/social.php'; ?>
 
 <?php get_footer(); ?>
