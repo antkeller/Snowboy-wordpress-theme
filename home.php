@@ -83,20 +83,6 @@ Template Name: Home
     </div><!-- .services-list -->
   </div><!-- .section-content -->
 </section><!-- .services-section -->
-<section id="follow-us" class="follow-us row">
-  <div class="section-content col-xs-12">
-    <div class="follow-us-wrapper">
-      <h2 class="section-heading">Follow Us</h2>
-      <ul>
-        <li><a href="https://instagram.com/snowboyproductions/" target="_blank"><span class="instagram"></span></a></li>
-        <li><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><span class="facebook"></span></a></li>
-        <li><a href="https://twitter.com/snowboyus" target="_blank"><span class="twitter"></span></a></li>
-      </ul>
-      <div class="row"><?php dynamic_sidebar( 'primary' ); ?></div>
-      <!-- <?php echo do_shortcode('[instagram-feed]'); ?> -->
-    </div><!-- .sidebar -->
-  </div><!-- .section-content -->
-</section><!-- .middle-content -->
 
 <section id="gallery" class="galleries-section row">
   <div class="section-content col-xs-12">
@@ -109,7 +95,7 @@ Template Name: Home
   $args = array(
     'post_type' => 'snowboy_galleries',
     'posts_per_page' => '3',
-    'order' => 'ASC'
+    'order' => 'DEC'
   );
 
   $loop = new WP_Query( $args );
@@ -145,6 +131,8 @@ Template Name: Home
     </ul>
   </div><!-- .section-content -->
 </section><!-- .home-galleries -->
+
+<?php include get_template_directory() . '/_/inc/modules/social.php'; ?>
 
 <section id="clients" class="clients-section row">
   <div class="section-content col-xs-12">

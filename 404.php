@@ -9,8 +9,9 @@
 
 get_header(); ?>
 
-	<h2>Error 404 - Page Not Found</h2>
+	<h2>404</h2>
+	<p>Page not found</p>
 
-<?php get_sidebar(); ?>
+	<?php include get_template_directory() . '/_/inc/modules/featured-slider.php'; ?>
 
 <?php get_footer(); ?>

@@ -29,12 +29,9 @@
 	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="XXXXXXXXXX" />
-	<meta property="fb:app_id" content="XXXXXXXXXX"/>
 	<meta itemprop="name" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta itemprop="description" content="<?php bloginfo('description'); ?>" />
 	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
-	<meta name="twitter:card" content="summary" />
-	<meta name="twitter:site" content="@XXXXXXXXXX" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-icon-precomposed.png" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />

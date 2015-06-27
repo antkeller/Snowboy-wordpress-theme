@@ -25,6 +25,12 @@ SNOWBOY.Main = {
 					});
 			});
     }
+		// main menu nav scrolling
+		// $('#nav .menu a').on('click.mainMenu', function (e) {
+		// 	e.preventDefault();
+		// 	var url = $(this).attr('href');
+		// 	SNOWBOY.Main.utilities.pageScroll(url, 0.5);
+		// });
 		if ($body.hasClass('single-snowboy_galleries')) {
 			new SNOWBOY.Gallery();
 		}
