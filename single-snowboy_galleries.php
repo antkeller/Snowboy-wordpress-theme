@@ -7,31 +7,31 @@
 		$images = get_field('snowboy_gallery');
 ?>
 
-			<section class="gallery-detail">
-				<div class="section-content">
+			<section class="gallery-detail row">
+				<div class="section-content col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
 					<div class="gallery">
 						<?php if ($images) : ?>
 							<div id="sync1" class="owl-carousel">
-
+								<?php $i = 0; ?>
 								 <?php foreach( $images as $image ): ?>
-										<div class="item">
+										<div class="item" data-hash="#<?php echo $i; ?>">
 											<img src="<?php echo $image[url]; ?>" alt="<?php echo $image['alt']; ?>" />
 										</div>
 
-							<?php
+							<?php $i++;
 									endforeach;
 							?>
 
 						</div>
 
 						<div id="sync2" class="owl-carousel">
-
+							<?php $i = 0; ?>
 							<?php foreach( $images as $image ): ?>
 									<div class="item">
-										<img src="<?php echo $image[url]; ?>" alt="<?php echo $image['alt']; ?>" />
+										<a href="#<?php echo $i; ?>"><img src="<?php echo $image[url]; ?>" alt="<?php echo $image['alt']; ?>" /></a>
 									</div>
 
-						<?php
+						<?php $i++;
 								endforeach;
 						?>
 

@@ -2,57 +2,94 @@
  * 2015 Snowboy WordPress Theme - Gallery
  */
 
- var SNOWBOY = SNOWBOY || {};
+var SNOWBOY = SNOWBOY || {};
 
 
- SNOWBOY.Gallery = function(autoRotate) {
-   this.config = {
-     autoRotate: typeof autoRotate !== 'undefined' ? autoRotate : true
-   };
-   $(document).ready(function() {
+SNOWBOY.Gallery = function(autoRotate) {
+  this.config = {
+    autoRotate: typeof autoRotate !== 'undefined' ? autoRotate : true
+  };
+  this.init();
+};
 
+SNOWBOY.Gallery.prototype = {
+  init: function () {
     var sync1 = $("#sync1");
     var sync2 = $("#sync2");
 
+    // on change, update the synced thumbnail
+    sync1.on('changed.owl.carousel', function(event) {
+      var current = event.item.index;
+
+      if(current !== null) {
+        $("#sync2")
+          .find(".owl-item")
+          .removeClass("synced")
+          .eq(current)
+          .addClass("synced");
+
+        // center(current);
+        console.log('current index', current);
+      }
+    });
+
+    sync2.on('initialized.owl.carousel', function(event) {
+      // select the first thumbnail by default
+      $(this).find(".owl-item").eq(0).addClass("synced");
+      // on click update the large carousel
+      $(this).on("click", ".owl-item", function(e){
+        e.preventDefault();
+        var number = $(this).index('#sync2 .owl-item');
+        sync1.trigger("to.owl.carousel", [number, 500]);
+      });
+
+    });
+
     sync1.owlCarousel({
-      items : 1,
-      singleItem : true,
-      slideSpeed : 1000,
+      items: 1,
+      singleItem: true,
+      slideSpeed: 500,
+      loop: true,
       navigation: true,
+      lazyLoad: true,
       pagination:false,
-      afterAction : syncPosition,
-      responsiveRefreshRate : 200,
+      responsiveRefreshRate: 200
+      // URLhashListener:true,
+      // startPosition: 'URLHash'
     });
 
     sync2.owlCarousel({
-      items : 8,
-      itemsDesktop      : [1199,8],
-      itemsDesktopSmall     : [979,7],
-      itemsTablet       : [768,6],
-      itemsMobile       : [479,3],
-      pagination:false,
-      responsiveRefreshRate : 100,
-      afterInit : function(el){
-        el.find(".owl-item").eq(0).addClass("synced");
-      }
-    });
-
-    function syncPosition(el){
-      var current = this.currentItem;
-      $("#sync2")
-        .find(".owl-item")
-        .removeClass("synced")
-        .eq(current)
-        .addClass("synced")
-      if($("#sync2").data("owlCarousel") !== undefined){
-        center(current)
-      }
-    }
-
-    $("#sync2").on("click", ".owl-item", function(e){
-      e.preventDefault();
-      var number = $(this).data("owlItem");
-      sync1.trigger("owl.goTo",number);
+      margin: 15,
+      center: false,
+      loop: false,
+      pagination: true,
+      responsiveRefreshRate: 100,
+      nav: true,
+      navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>'],
+      // startPosition: 'URLHash'
+      responsiveClass:true,
+      responsive: {
+				0:{
+					items: 2,
+          margin: 10
+				},
+				480:{
+					items: 3,
+					margin: 15
+				},
+				768:{
+					items: 4,
+					margin: 15
+				},
+        992:{
+					items: 5,
+					margin: 15
+				},
+        1200: {
+          items: 5,
+          margin: 15
+        }
+			}
     });
 
     function center(number){
@@ -64,24 +101,20 @@
           var found = true;
         }
       }
-
       if(found===false){
         if(num>sync2visible[sync2visible.length-1]){
-          sync2.trigger("owl.goTo", num - sync2visible.length+2)
+          sync2.trigger("to.owl.carousel", num - sync2visible.length+2)
         }else{
           if(num - 1 === -1){
             num = 0;
           }
-          sync2.trigger("owl.goTo", num);
+          sync2.trigger("to.owl.carousel", num);
         }
       } else if(num === sync2visible[sync2visible.length-1]){
-        sync2.trigger("owl.goTo", sync2visible[1])
+        sync2.trigger("to.owl.carousel", sync2visible[1])
       } else if(num === sync2visible[0]){
-        sync2.trigger("owl.goTo", num-1)
+        sync2.trigger("to.owl.carousel", num-1)
       }
-
     }
-
-  });
-
- };
+  }
+};

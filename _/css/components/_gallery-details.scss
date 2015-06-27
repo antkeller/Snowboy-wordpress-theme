@@ -1,0 +1,49 @@
+// ==========================================================================
+// COMPONENTS/_GALLERY-DETAILS.SCSS
+// ==========================================================================
+
+.gallery-detail {
+  padding-top: 30px;
+  padding-bottom: 60px;
+
+  .gallery {
+    height: 100%;
+    width: auto;
+  }
+
+  #sync2 {
+    padding-top: 30px;
+
+    .owl-nav {
+      .owl-prev {
+        background: url('../img/sprite.png') -101px -10px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+        left: 5px;
+      }
+
+      .owl-next {
+        background: url('../img/sprite.png') -130px -10px;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 45%;
+        right: 5px;
+      }
+    }
+
+    &:hover {
+      .owl-prev {
+        @include transition(all);
+        @include vendorize(transform, translate(-10px, 0));
+      }
+
+      .owl-next {
+        @include transition(all);
+        @include vendorize(transform, translate(10px, 0));
+      }
+    }
+  }
+}
