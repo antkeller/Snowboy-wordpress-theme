@@ -24,6 +24,11 @@ a {
   }
 }
 
+img, video, object {
+    max-width: 100%;
+    height: auto;
+}
+
 // Headings
 h1, .h1   {
     line-height: 1.2;
@@ -64,16 +69,6 @@ ul {
     line-height: 1.5;
 }
 
-img, video, object {
-    max-width: 100%;
-    height: auto;
-}
-
-figcaption {
-    font-style: italic;
-}
-
-
 // Blockquote
 blockquote {
     font-style:italic;
@@ -81,47 +76,6 @@ blockquote {
     color: $gray;
     padding-left: 20px;
     margin-bottom: 20px;
-}
-
-header {
-  margin: 20px 0;
-  position: relative;
-
-  h1 {
-    padding-bottom: 20px;
-  }
-
-  nav {
-    text-align: right;
-    padding-bottom: 5px;
-
-    .menu {
-      text-align: center;
-      padding-bottom: 20px;
-
-      li {
-        display: inline-block;
-
-        a {
-          padding: 3px;
-          font-size: .7em;
-          text-transform: uppercase;
-        }
-      }
-    }
-  }
-
-  .site-description {
-
-    h3 {
-      font-family: $taglineFont;
-      font-weight: 400;
-      letter-spacing: 1px;
-      text-align: right;
-      text-transform: uppercase;
-      font-size: 1.25em;
-    }
-  }
 }
 
 #wrapper {
@@ -149,47 +103,6 @@ header {
   text-align: center;
 }
 
-.follow-us {
-  padding-top: 30px;
-  padding-bottom: 10px;
-
-  .follow-us-wrapper {
-    text-align: center;
-
-    h2 {
-      text-align: right;
-      display: inline-block;
-    }
-
-    ul {
-      display: inline-block;
-      padding-left: 5px;
-      vertical-align: middle;
-      padding-bottom: 6px;
-
-      li {
-        display: inline-block;
-        margin-left: 5px;
-
-        span {
-          background: url('../img/sprite.png') -71px -10px;
-          width: 32px;
-          height: 30px;
-          display: inline-block;
-
-          &.facebook {
-            background-position: -35px -10px;
-          }
-
-          &.instagram {
-            background-position: 0 -10px;
-          }
-        }
-      }
-    }
-  }
-}
-
 // event gallery styles
 .galleries-section {
   padding-top: 30px;
@@ -204,33 +117,6 @@ header {
     text-transform: uppercase;
     padding-top: 10px;
     font-size: 1.25em;
-  }
-}
-
-// clients list styles
-.clients-section {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center;
-
-  ul {
-    li {
-      display: inline-block;
-      margin-bottom: 5px;
-
-      a {
-        text-transform: uppercase;
-        padding: 5px;
-      }
-
-      &:after {
-        content: " / ";
-      }
-    }
-
-    li:last-child:after {
-      content: "";
-    }
   }
 }
 
@@ -255,78 +141,20 @@ header {
   }
 }
 
-
-.gallery {
-
-}
-
-
 @media screen and (min-width: $breakpoint-small) {
-  header {
 
-    nav {
-      .menu {
-        text-align: center;
-        padding-bottom: 20px;
-
-        li {
-          display: inline-block;
-
-          a {
-            padding: 5px;
-            font-size: .85em;
-            text-transform: uppercase;
-          }
-        }
-      }
-    }
-  }
 }
 
 @media screen and (min-width: $breakpoint-medium) {
-  header {
-    nav {
-      .menu {
-        padding-bottom: 0;
-        text-align: right;
-      }
-    }
 
-    h1 {
-      padding-bottom: 0;
-    }
-
-    .site-description {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
-  }
 }
 
 @media screen and (min-width: $breakpoint-large) {
   body {
     padding: 15px;
   }
-
-  header {
-    .site-description {
-      font-size: 1.2em;
-    }
-  }
-
-  .contact-page {
-    .section-content {
-      min-height: 600px;
-
-    }
-  }
 }
 
 @media screen and (min-width: $breakpoint-xlarge) {
-  header {
-    .site-description {
-      font-size: 1.65em;
-    }
-  }
+
 }

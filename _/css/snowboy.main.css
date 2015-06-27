@@ -51,6 +51,8 @@ p { margin-bottom: 20px; line-height: 1.5; }
 a { color: #fff; }
 a:hover, a:focus { color: #FF0000; }
 
+img, video, object { max-width: 100%; height: auto; }
+
 h1, .h1 { line-height: 1.2; }
 
 h2, .h2 { line-height: 1.2; font-size: 1.75em; font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; text-transform: uppercase; }
@@ -61,19 +63,7 @@ ol { margin-left: 1.5em; line-height: 1.5; }
 
 ul { list-style: none; line-height: 1.5; }
 
-img, video, object { max-width: 100%; height: auto; }
-
-figcaption { font-style: italic; }
-
 blockquote { font-style: italic; border-left: 1px solid #808080; color: #808080; padding-left: 20px; margin-bottom: 20px; }
-
-header { margin: 20px 0; position: relative; }
-header h1 { padding-bottom: 20px; }
-header nav { text-align: right; padding-bottom: 5px; }
-header nav .menu { text-align: center; padding-bottom: 20px; }
-header nav .menu li { display: inline-block; }
-header nav .menu li a { padding: 3px; font-size: .7em; text-transform: uppercase; }
-header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 400; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.25em; }
 
 #wrapper { max-width: 1240px; margin: 0 auto; }
 
@@ -83,24 +73,9 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 
 .services-section { padding-bottom: 30px; padding-top: 30px; text-align: center; }
 
-.follow-us { padding-top: 30px; padding-bottom: 10px; }
-.follow-us .follow-us-wrapper { text-align: center; }
-.follow-us .follow-us-wrapper h2 { text-align: right; display: inline-block; }
-.follow-us .follow-us-wrapper ul { display: inline-block; padding-left: 5px; vertical-align: middle; padding-bottom: 6px; }
-.follow-us .follow-us-wrapper ul li { display: inline-block; margin-left: 5px; }
-.follow-us .follow-us-wrapper ul li span { background: url("../img/sprite.png") -71px -10px; width: 32px; height: 30px; display: inline-block; }
-.follow-us .follow-us-wrapper ul li span.facebook { background-position: -35px -10px; }
-.follow-us .follow-us-wrapper ul li span.instagram { background-position: 0 -10px; }
-
 .galleries-section { padding-top: 30px; padding-bottom: 30px; }
 .galleries-section .section-heading { padding-bottom: 15px; }
 .galleries-section h4 { text-align: center; text-transform: uppercase; padding-top: 10px; font-size: 1.25em; }
-
-.clients-section { padding-top: 30px; padding-bottom: 30px; text-align: center; }
-.clients-section ul li { display: inline-block; margin-bottom: 5px; }
-.clients-section ul li a { text-transform: uppercase; padding: 5px; }
-.clients-section ul li:after { content: " / "; }
-.clients-section ul li:last-child:after { content: ""; }
 
 .contact-page { padding-top: 20px; padding-bottom: 30px; }
 .contact-page .section-content form { padding-top: 40px; }
@@ -108,14 +83,22 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .shop-page { padding-top: 30px; padding-bottom: 30px; }
 .shop-page .section-content { min-height: 600px; }
 
+@media screen and (min-width: 992px) { body { padding: 15px; } }
+header { margin: 20px 0; position: relative; }
+header h1 { padding-bottom: 20px; }
+header nav { text-align: right; padding-bottom: 5px; }
+header nav .menu { text-align: center; padding-bottom: 20px; }
+header nav .menu li { display: inline-block; }
+header nav .menu li a { padding: 3px; font-size: .7em; text-transform: uppercase; }
+header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 400; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.25em; }
+
 @media screen and (min-width: 480px) { header nav .menu { text-align: center; padding-bottom: 20px; }
   header nav .menu li { display: inline-block; }
   header nav .menu li a { padding: 5px; font-size: .85em; text-transform: uppercase; } }
 @media screen and (min-width: 768px) { header nav .menu { padding-bottom: 0; text-align: right; }
   header h1 { padding-bottom: 0; }
   header .site-description { position: absolute; bottom: 0; right: 0; } }
-@media screen and (min-width: 992px) { body { padding: 15px; }
-  header .site-description { font-size: 1.2em; }
+@media screen and (min-width: 992px) { header .site-description { font-size: 1.2em; }
   .contact-page .section-content { min-height: 600px; } }
 @media screen and (min-width: 1200px) { header .site-description { font-size: 1.65em; } }
 .gallery-detail { padding-top: 30px; padding-bottom: 60px; }
@@ -129,6 +112,21 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .error-404 { padding-top: 30px; }
 .error-404 .big { font-size: 4em; padding-bottom: 20px; }
 .error-404 p { font-size: 2em; }
+
+.follow-us { padding-top: 30px; padding-bottom: 10px; }
+.follow-us .follow-us-wrapper { text-align: center; }
+.follow-us .follow-us-wrapper h2 { text-align: right; display: inline-block; }
+.follow-us .follow-us-wrapper ul { display: inline-block; padding-left: 5px; vertical-align: middle; padding-bottom: 6px; }
+.follow-us .follow-us-wrapper ul li { display: inline-block; margin-left: 5px; }
+.follow-us .follow-us-wrapper ul li span { background: url("../img/sprite.png") -71px -10px; width: 32px; height: 30px; display: inline-block; }
+.follow-us .follow-us-wrapper ul li span.facebook { background-position: -35px -10px; }
+.follow-us .follow-us-wrapper ul li span.instagram { background-position: 0 -10px; }
+
+.clients-section { padding-top: 30px; padding-bottom: 30px; text-align: center; }
+.clients-section ul li { display: inline-block; margin-bottom: 5px; }
+.clients-section ul li a { text-transform: uppercase; padding: 5px; }
+.clients-section ul li:after { content: " / "; }
+.clients-section ul li:last-child:after { content: ""; }
 
 .container { margin-right: auto; margin-left: auto; padding-left: 10px; padding-right: 10px; }
 .container:before, .container:after { content: " "; display: table; }
