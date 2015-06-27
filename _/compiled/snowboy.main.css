@@ -534,6 +534,20 @@ header .site-description h3 {
   transform: translate(10px, 0);
 }
 
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_404\.scss}line{font-family:\000035}}
+.error-404 {
+  padding-top: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_404\.scss}line{font-family:\000038}}
+.error-404 .big {
+  font-size: 4em;
+  padding-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_404\.scss}line{font-family:\0000313}}
+.error-404 p {
+  font-size: 2em;
+}
+
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/lib\/bootstrap\/_grid\.scss}line{font-family:\0000310}}
 .container {
   margin-right: auto;

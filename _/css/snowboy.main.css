@@ -126,6 +126,10 @@ header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-
 .gallery-detail #sync2:hover .owl-prev { -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; -webkit-transform: translate(-10px, 0); -moz-transform: translate(-10px, 0); -ms-transform: translate(-10px, 0); -o-transform: translate(-10px, 0); transform: translate(-10px, 0); }
 .gallery-detail #sync2:hover .owl-next { -webkit-transition: all 300ms ease-in-out; -moz-transition: all 300ms ease-in-out; -ms-transition: all 300ms ease-in-out; -o-transition: all 300ms ease-in-out; transition: all 300ms ease-in-out; -webkit-transform: translate(10px, 0); -moz-transform: translate(10px, 0); -ms-transform: translate(10px, 0); -o-transform: translate(10px, 0); transform: translate(10px, 0); }
 
+.error-404 { padding-top: 30px; }
+.error-404 .big { font-size: 4em; padding-bottom: 20px; }
+.error-404 p { font-size: 2em; }
+
 .container { margin-right: auto; margin-left: auto; padding-left: 10px; padding-right: 10px; }
 .container:before, .container:after { content: " "; display: table; }
 .container:after { clear: both; }
