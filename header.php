@@ -46,6 +46,13 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="container-fluid">
 		<header id="header" class="row" role="banner">
+			<div class="social-header col-xs-6">
+				<ul>
+	        <li><a href="https://instagram.com/snowboyproductions/" target="_blank"><span class="instagram"></span></a></li>
+	        <li><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><span class="facebook"></span></a></li>
+	        <li><a href="https://twitter.com/snowboyus" target="_blank"><span class="twitter"></span></a></li>
+	      </ul>
+			</div>
 			<a id="primary-navigation" class="menu-toggle">
 			  <span>toggle menu</span>
 			</a>

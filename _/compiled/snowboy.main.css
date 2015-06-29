@@ -320,10 +320,42 @@ header {
   position: relative;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\000039}}
+header .social-header {
+  text-align: right;
+  float: right;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000313}}
+header .social-header ul {
+  display: inline-block;
+  padding-left: 5px;
+  vertical-align: middle;
+  padding-bottom: 6px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000319}}
+header .social-header ul li {
+  display: inline-block;
+  margin-left: 5px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000323}}
+header .social-header ul li span {
+  background: url("../img/sprite.png") -71px -10px;
+  width: 32px;
+  height: 30px;
+  display: inline-block;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000329}}
+header .social-header ul li span.facebook {
+  background-position: -35px -10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000333}}
+header .social-header ul li span.instagram {
+  background-position: 0 -10px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000341}}
 header h1 {
   padding-bottom: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000313}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000345}}
 header nav {
   display: block;
   max-height: 0;
@@ -339,7 +371,7 @@ header nav {
   opacity: 0;
   overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000320}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000352}}
 header nav.active {
   display: block;
   max-height: 700px;
@@ -349,19 +381,19 @@ header nav.active {
   -o-opacity: 1;
   opacity: 1;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000326}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000358}}
 header nav .menu {
   text-align: center;
   padding-bottom: 20px;
   line-height: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000365}}
 header nav .menu li a {
   padding: 3px;
   font-size: 1em;
   text-transform: uppercase;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000344}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000376}}
 header .site-description h3 {
   font-family: "Impact", Charcoal, sans-serif;
   font-weight: 400;
@@ -371,17 +403,17 @@ header .site-description h3 {
   font-size: 1.25em;
   text-align: center;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000388}}
 header .menu-toggle {
   background-color: #000;
   display: block;
   position: relative;
   overflow: hidden;
-  float: right;
-  margin: 0 10px 20px 0;
+  float: left;
+  margin: 0 10px 20px;
   padding: 0;
   width: 50px;
-  height: 50px;
+  height: 38px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -395,15 +427,15 @@ header .menu-toggle {
   -o-transition: background 0.3s 300ms ease-in-out;
   transition: background 0.3s 300ms ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000375}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003108}}
 header .menu-toggle:focus {
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003112}}
 header .menu-toggle span {
   display: block;
   position: absolute;
-  top: 22px;
+  top: 15px;
   left: 0;
   right: 0;
   height: 6px;
@@ -414,7 +446,7 @@ header .menu-toggle span {
   -o-transition: background 0s 0.3s 300ms ease-in-out;
   transition: background 0s 0.3s 300ms ease-in-out;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003122}}
 header .menu-toggle span::before, header .menu-toggle span::after {
   position: absolute;
   display: block;
@@ -426,63 +458,63 @@ header .menu-toggle span::before, header .menu-toggle span::after {
   transition-duration: 0.3s, 0.3s;
   transition-delay: 0.3s, 0s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003102}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003135}}
 header .menu-toggle span::before {
   top: -15px;
   transition-property: top, transform;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003107}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003140}}
 header .menu-toggle span::after {
   bottom: -15px;
   transition-property: bottom, transform;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003145}}
 header .menu-toggle span:focus {
   outline: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003119}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003152}}
 header .menu-toggle.is-active span {
   background: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003155}}
 header .menu-toggle.is-active span::before, header .menu-toggle.is-active span::after {
   transition-delay: 0s, 0.3s;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003127}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003160}}
 header .menu-toggle.is-active span::before {
   top: 0;
   transform: rotate(45deg);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003165}}
 header .menu-toggle.is-active span::after {
   bottom: 0;
   transform: rotate(-45deg);
 }
 
 @media screen and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003140}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003173}}
   header {
     margin-top: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003143}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003176}}
   header .menu-toggle {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003147}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003180}}
   header nav {
     max-height: none;
     opacity: 1;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003151}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003184}}
   header nav .menu {
     text-align: center;
     padding-bottom: 20px;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003155}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003188}}
   header nav .menu li {
     display: inline-block;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003191}}
   header nav .menu li a {
     padding: 5px;
     font-size: .85em;
@@ -490,39 +522,39 @@ header .menu-toggle.is-active span::after {
   }
 }
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003205}}
   header nav .menu {
     padding-bottom: 0;
     text-align: right;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003178}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003211}}
   header h1 {
     padding-bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003215}}
   header .site-description {
     position: absolute;
     bottom: 0;
     right: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003187}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003220}}
   header .site-description h3 {
     text-align: right;
   }
 }
 @media screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003196}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003229}}
   header .site-description {
     font-size: 1.2em;
   }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003235}}
   .contact-page .section-content {
     min-height: 600px;
   }
 }
 @media screen and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003211}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003244}}
   header .site-description {
     font-size: 1.65em;
   }
