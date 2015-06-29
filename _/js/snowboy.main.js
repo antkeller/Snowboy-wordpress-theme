@@ -31,6 +31,19 @@ SNOWBOY.Main = {
 		// 	var url = $(this).attr('href');
 		// 	SNOWBOY.Main.utilities.pageScroll(url, 0.5);
 		// });
+
+		var toggle = $(".menu-toggle");
+		toggle.on( "click", function(e) {
+      e.preventDefault();
+      $(this).toggleClass("is-active");
+			$('.primary-navigation').toggleClass("active");
+		});
+
+
+
+
+
+
 		if ($body.hasClass('single-snowboy_galleries')) {
 			new SNOWBOY.Gallery();
 		}

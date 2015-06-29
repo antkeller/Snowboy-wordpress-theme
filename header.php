@@ -32,8 +32,8 @@
 	<meta itemprop="name" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta itemprop="description" content="<?php bloginfo('description'); ?>" />
 	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
-	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
-	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-icon-precomposed.png" />
+	<!-- <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" /> -->
+	<!-- <link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-icon-precomposed.png" /> -->
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="profile" href="http://gmpg.org/xfn/11" />
 	<?php include '_/inc/header-includes.php' ?>
@@ -46,7 +46,10 @@
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="container-fluid">
 		<header id="header" class="row" role="banner">
-			<nav id="nav" class="col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3" role="navigation">
+			<a id="primary-navigation" class="menu-toggle">
+			  <span>toggle menu</span>
+			</a>
+			<nav id="nav" class="primary-navigation col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3" role="navigation">
 				<?php wp_nav_menu( array('menu' => 'primary') ); ?>
 			</nav>
 			<h1 class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8 col-lg-3 col-lg-pull-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
