@@ -15,38 +15,37 @@ SNOWBOY.Main = {
 		$body = $('body');
 		// init featured slider
 		if ($body.hasClass('home')) {
-			new SNOWBOY.FeaturedSlider();
-			//fade gallery images on hover
-			jQuery('#gallery .gallery-link img').each(function(){
-					jQuery(this).hover(function(){
-							jQuery(this).fadeTo(200, 0.75);
-					}, function(){
-							jQuery(this).stop().fadeTo(500, 1);
-					});
-			});
-    }
-		// main menu nav scrolling
-		// $('#nav .menu a').on('click.mainMenu', function (e) {
-		// 	e.preventDefault();
-		// 	var url = $(this).attr('href');
-		// 	SNOWBOY.Main.utilities.pageScroll(url, 0.5);
-		// });
-
+			self.homeInit();
+    } else if ($body.hasClass('single-snowboy_galleries')) {
+			self.galleryInit();
+		}
+		// mobile navigation menu toggle
 		var toggle = $(".menu-toggle");
 		toggle.on( "click", function(e) {
       e.preventDefault();
       $(this).toggleClass("is-active");
 			$('.primary-navigation').toggleClass("active");
 		});
-
-
-
-
-
-
-		if ($body.hasClass('single-snowboy_galleries')) {
-			new SNOWBOY.Gallery();
-		}
+	},
+	homeInit: function() {
+		// main menu nav scrolling
+		$('#nav .menu .scroll a').on('click.mainMenu', function (e) {
+			e.preventDefault();
+			var url = $(this).attr('href');
+			SNOWBOY.Main.utilities.pageScroll(url, 0.5);
+		});
+		//fade gallery images on hover
+		jQuery('#gallery .gallery-link img').each(function(){
+				jQuery(this).hover(function(){
+						jQuery(this).fadeTo(200, 0.75);
+				}, function(){
+						jQuery(this).stop().fadeTo(500, 1);
+				});
+		});
+		new SNOWBOY.FeaturedSlider();
+	},
+	galleryInit: function() {
+		new SNOWBOY.Gallery();
   },
 	utilities: {
 		cookie: {
@@ -74,6 +73,9 @@ SNOWBOY.Main = {
 		},
 		pageScroll: function (hash, duration, updateLocation) {
 			var yPosition;
+			// make sure we have a leading #
+		  hashIndex = hash.indexOf('#');
+		  hash = hash.substr(hashIndex);
 			// check duration
 			if (typeof duration === 'undefined') {
 				duration = 1;
