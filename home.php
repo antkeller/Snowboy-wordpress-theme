@@ -95,7 +95,7 @@ Template Name: Home
   $args = array(
     'post_type' => 'snowboy_galleries',
     'posts_per_page' => '3',
-    'order' => 'DEC'
+    'order' => 'ASC'
   );
 
   $loop = new WP_Query( $args );
