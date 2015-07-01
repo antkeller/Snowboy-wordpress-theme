@@ -55,7 +55,7 @@ img, video, object { max-width: 100%; height: auto; }
 
 h1, .h1 { line-height: 1.2; }
 
-h2, .h2 { line-height: 1.2; font-size: 1.75em; font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; text-transform: uppercase; }
+h2, .h2 { line-height: 1.2; font-size: 1.75em; font-family: "Arial Black", "Arial Bold", Gadget, sans-serif; font-weight: 900; text-transform: uppercase; }
 
 h3, .h3 { line-height: 1.2; }
 
@@ -96,7 +96,7 @@ header nav { display: block; max-height: 0; -webkit-transition: all 500ms ease-i
 header nav.active { display: block; max-height: 700px; -webkit-opacity: 1; -moz-opacity: 1; -ms-opacity: 1; -o-opacity: 1; opacity: 1; }
 header nav .menu { text-align: center; padding-bottom: 20px; line-height: 30px; }
 header nav .menu li a { padding: 3px; font-size: 1em; text-transform: uppercase; }
-header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 400; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.25em; text-align: center; }
+header .site-description h3 { font-family: "Impact", Charcoal, sans-serif; font-weight: 900; letter-spacing: 1px; text-align: right; text-transform: uppercase; font-size: 1.25em; text-align: center; }
 header .menu-toggle { background-color: #000; display: block; position: relative; overflow: hidden; float: left; margin: 0 10px 20px; padding: 0; width: 50px; height: 38px; font-size: 0; text-indent: -9999px; appearance: none; box-shadow: none; border-radius: none; border: none; cursor: pointer; -webkit-transition: background 0.3s 300ms ease-in-out; -moz-transition: background 0.3s 300ms ease-in-out; -ms-transition: background 0.3s 300ms ease-in-out; -o-transition: background 0.3s 300ms ease-in-out; transition: background 0.3s 300ms ease-in-out; }
 header .menu-toggle:focus { outline: none; }
 header .menu-toggle span { display: block; position: absolute; top: 15px; left: 0; right: 0; height: 6px; background: white; -webkit-transition: background 0s 0.3s 300ms ease-in-out; -moz-transition: background 0s 0.3s 300ms ease-in-out; -ms-transition: background 0s 0.3s 300ms ease-in-out; -o-transition: background 0s 0.3s 300ms ease-in-out; transition: background 0s 0.3s 300ms ease-in-out; }

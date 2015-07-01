@@ -74,7 +74,7 @@ SNOWBOY.Gallery.prototype = {
           margin: 10
 				},
 				480:{
-					items: 3,
+					items: 4,
 					margin: 15
 				},
 				768:{

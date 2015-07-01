@@ -28,7 +28,7 @@
 							<?php $i = 0; ?>
 							<?php foreach( $images as $image ): ?>
 									<div class="item">
-										<a href="#<?php echo $i; ?>"><img src="<?php echo $image[url]; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+										<a href="#<?php echo $i; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
 									</div>
 
 						<?php $i++;
