@@ -78,43 +78,51 @@ SNOWBOY.Gallery.prototype = {
 					margin: 15
 				},
 				768:{
-					items: 4,
-					margin: 15
-				},
-        992:{
 					items: 5,
 					margin: 15
 				},
+        992:{
+					items: 6,
+					margin: 15
+				},
         1200: {
-          items: 5,
+          items: 7,
           margin: 15
         }
 			}
     });
+    // resize gallery based on new image height, it's responsive
+		$(window).on('change.owl.carousel', function () {
+			var imgHeight = $('#sync1 .owl-stage-outer .owl-item img').height();
+			$('#sync1 .owl-stage .owl-item').clearQueue();
+			$('#sync1 .owl-stage .owl-item ').animate({
+				height: imgHeight
+			}, 500);
+		});
 
-    function center(number){
-      var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
-      var num = number;
-      var found = false;
-      for(var i in sync2visible){
-        if(num === sync2visible[i]){
-          var found = true;
-        }
-      }
-      if(found===false){
-        if(num>sync2visible[sync2visible.length-1]){
-          sync2.trigger("to.owl.carousel", num - sync2visible.length+2)
-        }else{
-          if(num - 1 === -1){
-            num = 0;
-          }
-          sync2.trigger("to.owl.carousel", num);
-        }
-      } else if(num === sync2visible[sync2visible.length-1]){
-        sync2.trigger("to.owl.carousel", sync2visible[1])
-      } else if(num === sync2visible[0]){
-        sync2.trigger("to.owl.carousel", num-1)
-      }
-    }
+    // function center(number){
+    //   var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
+    //   var num = number;
+    //   var found = false;
+    //   for(var i in sync2visible){
+    //     if(num === sync2visible[i]){
+    //       var found = true;
+    //     }
+    //   }
+    //   if(found===false){
+    //     if(num>sync2visible[sync2visible.length-1]){
+    //       sync2.trigger("to.owl.carousel", num - sync2visible.length+2)
+    //     }else{
+    //       if(num - 1 === -1){
+    //         num = 0;
+    //       }
+    //       sync2.trigger("to.owl.carousel", num);
+    //     }
+    //   } else if(num === sync2visible[sync2visible.length-1]){
+    //     sync2.trigger("to.owl.carousel", sync2visible[1])
+    //   } else if(num === sync2visible[0]){
+    //     sync2.trigger("to.owl.carousel", num-1)
+    //   }
+    // }
   }
 };
