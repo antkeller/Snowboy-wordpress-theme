@@ -8,7 +8,7 @@
 ?>
 
 			<section class="gallery-detail row">
-				<div class="section-content col-xs-12 col-sm-10 col-sm-offset-1 col-lg-8 col-lg-offset-2">
+				<div class="section-content col-xs-12 col-lg-10 col-lg-offset-1">
 					<div class="gallery">
 						<?php if ($images) : ?>
 							<div id="sync1" class="owl-carousel">

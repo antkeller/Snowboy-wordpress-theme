@@ -6,42 +6,7 @@ Template Name: Home
 
 <?php get_header(); ?>
 
-<?php if(get_field('snowboy_featured_slider')): ?>
-
-  <section class="featured-slider row">
-    <div class="section-content col-xs-12">
-      <div class="slider-wrapper">
-        <div class="slide-list owl-carousel owl-theme-snowboy">
-          <?php
-            while(the_repeater_field('snowboy_featured_slider')):
-              $sliderImage = get_sub_field('snowboy_featured_slider_image');
-              $sliderUrl = get_sub_field('snowboy_featured_slider_url');
-              $sliderAltText = get_sub_field('snowboy_featured_slider_alt_text');
-              $sliderCaption = get_sub_field('snowboy_featured_slider_caption');
-  				?>
-
-          <div class="content">
-            <div class="slide-item">
-              <?php if($sliderUrl) : ?><a href="<?php echo $sliderUrl; ?>" class="slider-link"><?php else: ?><div class="slider-link"><?php endif; ?>
-  						<img src="<?php bloginfo('template_directory'); ?>/_/img/featured-slider.gif" data-src="<?php echo $sliderImage['url']; ?>" alt="<?php echo $sliderAltText ?>" class="slider-img lazy" />
-              <?php if($sliderUrl) : ?></a><?php else: ?></div><?php endif; ?>
-            </div>
-            <div class="caption">
-              <?php echo $sliderCaption; ?>
-            </div>
-            <div class="clearfix"></div>
-          </div>
-
-          <?php
-            endwhile;
-          ?>
-        </div>
-      </div><!-- .slider-wrapper -->
-    </div><!-- .section-content -->
-    <div class="clearfix"></div>
-  </section><!-- .featured-slider -->
-
-<?php endif; ?>
+<?php include get_template_directory() . '/_/inc/modules/featured-slider.php'; ?>
 
 <section id="about" class="about-section row">
   <div class="section-content col-xs-12 col-md-10 col-md-offset-1">

@@ -70,19 +70,19 @@ SNOWBOY.Gallery.prototype = {
       responsiveClass:true,
       responsive: {
 				0:{
-					items: 2,
+					items: 3,
           margin: 10
 				},
 				480:{
-					items: 4,
-					margin: 15
+					items: 5,
+					margin: 10
 				},
 				768:{
-					items: 5,
+					items: 6,
 					margin: 15
 				},
         992:{
-					items: 6,
+					items: 7,
 					margin: 15
 				},
         1200: {
@@ -92,13 +92,13 @@ SNOWBOY.Gallery.prototype = {
 			}
     });
     // resize gallery based on new image height, it's responsive
-		$(window).on('change.owl.carousel', function () {
-			var imgHeight = $('#sync1 .owl-stage-outer .owl-item img').height();
-			$('#sync1 .owl-stage .owl-item').clearQueue();
-			$('#sync1 .owl-stage .owl-item ').animate({
-				height: imgHeight
-			}, 500);
-		});
+		// $(window).on('change.owl.carousel', function () {
+		// 	var imgHeight = $('#sync1 .owl-stage-outer .owl-item img').height();
+		// 	$('#sync1 .owl-stage .owl-item').clearQueue();
+		// 	$('#sync1 .owl-stage .owl-item ').animate({
+		// 		height: imgHeight
+		// 	}, 500);
+		// });
 
     // function center(number){
     //   var sync2visible = sync2.data("owlCarousel").owl.visibleItems;
