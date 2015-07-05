@@ -1,5 +1,5 @@
 // ==========================================================================
-// COMPONENTS/_GALLERY-DETAILS.SCSS
+// COMPONENTS/_GALLERY.SCSS
 // ==========================================================================
 
 .gallery-detail {
@@ -18,7 +18,10 @@
 
   #sync2 {
     padding-top: 30px;
+  }
 
+  #sync1,
+  #sync2 {
     .owl-nav {
       .owl-prev {
         background: url('../img/sprite.png') -246px -10px;
@@ -84,15 +87,15 @@
 }
 
 @media screen and (min-width: $breakpoint-large) {
-  // .gallery-detail {
-  //   #sync1 {
-  //     .owl-item {
-  //       img {
-  //         height: 600px;
-  //         width: auto;
-  //         margin: 0 auto;
-  //       }
-  //     }
-  //   }
-  // }
+  .gallery-detail {
+    #sync1 {
+      .owl-item {
+        img {
+          height: 550px;
+          width: auto;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
 }

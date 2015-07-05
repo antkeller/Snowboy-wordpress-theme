@@ -50,12 +50,13 @@ SNOWBOY.Gallery.prototype = {
       singleItem: true,
       slideSpeed: 500,
       loop: true,
+      center: false,
       navigation: true,
       lazyLoad: true,
       pagination:false,
+      nav: true,
+      navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>'],
       responsiveRefreshRate: 200
-      // URLhashListener:true,
-      // startPosition: 'URLHash'
     });
 
     sync2.owlCarousel({
@@ -67,7 +68,6 @@ SNOWBOY.Gallery.prototype = {
       slideBy: 3,
       nav: true,
       navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>'],
-      // startPosition: 'URLHash'
       responsiveClass:true,
       responsive: {
 				0:{
