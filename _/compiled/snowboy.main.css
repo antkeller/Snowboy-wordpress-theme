@@ -280,42 +280,46 @@ blockquote {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003100}}
 .galleries-section {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003104}}
 .galleries-section .section-heading {
   padding-bottom: 15px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003108}}
+.galleries-section ul li {
+  padding-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003112}}
 .galleries-section h4 {
   text-align: center;
   text-transform: uppercase;
-  padding-top: 10px;
+  padding-top: 5px;
   font-size: 1.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003116}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003120}}
 .contact-page {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003122}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003126}}
 .contact-page .section-content form {
   padding-top: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003132}}
 .shop-page {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003132}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003136}}
 .shop-page .section-content {
   min-height: 600px;
 }
 
 @media screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003146}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003150}}
   body {
     padding: 15px;
   }

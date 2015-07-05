@@ -75,9 +75,10 @@ blockquote { font-style: italic; border-left: 1px solid #808080; color: #808080;
 
 .services-section { padding-bottom: 30px; padding-top: 30px; text-align: center; }
 
-.galleries-section { padding-top: 30px; padding-bottom: 30px; }
+.galleries-section { padding-top: 30px; padding-bottom: 10px; }
 .galleries-section .section-heading { padding-bottom: 15px; }
-.galleries-section h4 { text-align: center; text-transform: uppercase; padding-top: 10px; font-size: 1.25em; }
+.galleries-section ul li { padding-bottom: 20px; }
+.galleries-section h4 { text-align: center; text-transform: uppercase; padding-top: 5px; font-size: 1.25em; }
 
 .contact-page { padding-top: 20px; padding-bottom: 30px; }
 .contact-page .section-content form { padding-top: 40px; }
