@@ -12,28 +12,20 @@
 					<div class="gallery">
 						<?php if ($images) : ?>
 							<div id="sync1" class="owl-carousel">
-								<?php $i = 0; ?>
 								 <?php foreach( $images as $image ): ?>
-										<div class="item" data-hash="#<?php echo $i; ?>">
-											<img src="<?php echo $image[url]; ?>" alt="<?php echo $image['alt']; ?>" />
+										<div class="item">
+											<img src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" />
+											<p class="gallery-caption"><?php echo $image['caption']; ?></p>
 										</div>
-
-							<?php $i++;
-									endforeach;
-							?>
-
+								<?php endforeach; ?>
 						</div>
 
 						<div id="sync2" class="owl-carousel">
-							<?php $i = 0; ?>
 							<?php foreach( $images as $image ): ?>
 									<div class="item">
-										<a href="#<?php echo $i; ?>"><img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?>" /></a>
+										<img src="<?php echo $image['sizes']['thumbnail']; ?>" alt="<?php echo $image['alt']; ?> thumbnail" />
 									</div>
-
-						<?php $i++;
-								endforeach;
-						?>
+							<?php endforeach; ?>
 
 					</div>
 

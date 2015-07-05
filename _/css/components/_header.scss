@@ -9,6 +9,7 @@ header {
   .social-header {
     text-align: right;
     float: right;
+    clear: both;
 
     ul {
       display: inline-block;
@@ -44,6 +45,7 @@ header {
 
   nav {
     display: block;
+    clear: both;
     max-height: 0;
     @include transition(all, 500ms, ease-in-out);
     @include vendorize(opacity, 0);
@@ -201,24 +203,52 @@ header {
 
 @media screen and (min-width: $breakpoint-medium) {
   header {
-    nav {
-      .menu {
+    .social-header {
+      padding-bottom: 10px;
+    }
+
+    .main-header-wrapper {
+      position: relative;
+      clear: both;
+
+      nav {
+        position: absolute;
+        top: -5px;
+        right: 0;
+
+        .menu {
+          padding-bottom: 0;
+          text-align: right;
+        }
+      }
+
+      h1 {
         padding-bottom: 0;
-        text-align: right;
+        width: 33%;
+      }
+
+      .site-description {
+        width: 70%;
+        position: absolute;
+        bottom: 3px;
+        right: 0;
+
+        h3 {
+          text-align: right;
+          font-size: 1em;
+        }
       }
     }
+  }
+}
 
-    h1 {
-      padding-bottom: 0;
-    }
-
-    .site-description {
-      position: absolute;
-      bottom: 0;
-      right: 0;
-
-      h3 {
-        text-align: right;
+@media screen and (min-width: 880px) {
+  header {
+    .main-header-wrapper {
+      .site-description {
+        h3 {
+          font-size: 1.2em;
+        }
       }
     }
   }
@@ -226,8 +256,12 @@ header {
 
 @media screen and (min-width: $breakpoint-large) {
   header {
-    .site-description {
-      font-size: 1.2em;
+    .main-header-wrapper {
+      .site-description {
+        h3 {
+          font-size: 1.35em;
+        }
+      }
     }
   }
 
@@ -239,10 +273,43 @@ header {
   }
 }
 
+@media screen and (min-width: 1096px) {
+  header {
+    .main-header-wrapper {
+      .site-description {
+        h3 {
+          font-size: 1.55em;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $breakpoint-xlarge) {
   header {
-    .site-description {
-      font-size: 1.65em;
+    .main-header-wrapper {
+      h1 {
+        width: 30%;
+      }
+
+      .site-description {
+        width: 70%;
+        h3 {
+          font-size: 1.8em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  header {
+    .main-header-wrapper {
+      .site-description {
+        h3 {
+          font-size: 1.9em;
+        }
+      }
     }
   }
 }

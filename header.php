@@ -45,8 +45,8 @@
 </head>
 <body <?php body_class(); ?>>
 	<div id="wrapper" class="container-fluid">
-		<header id="header" class="row" role="banner">
-			<div class="social-header col-xs-6">
+		<header id="header" role="banner">
+			<div class="social-header">
 				<ul>
 	        <li><a href="https://instagram.com/snowboyproductions/" target="_blank"><span class="instagram"></span></a></li>
 	        <li><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><span class="facebook"></span></a></li>
@@ -56,11 +56,13 @@
 			<a id="primary-navigation" class="menu-toggle">
 			  <span>toggle menu</span>
 			</a>
-			<nav id="nav" class="primary-navigation col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3" role="navigation">
-				<?php wp_nav_menu( array('menu' => 'primary') ); ?>
-			</nav>
-			<h1 class="col-xs-12 col-sm-5 col-sm-pull-7 col-md-4 col-md-pull-8 col-lg-3 col-lg-pull-9"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
-			<div class="site-description col-xs-12 col-sm-7 col-sm-push-5 col-md-8 col-md-push-4 col-lg-9 col-lg-push-3">
-				<h3>Making shit radder than it was yesterday... <span>since 1997.</span></h3>
-			</div>
+			<div class="main-header-wrapper">
+				<nav id="nav" class="primary-navigation" role="navigation">
+					<?php wp_nav_menu( array('menu' => 'primary') ); ?>
+				</nav>
+				<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
+				<div class="site-description">
+					<h3>Making shit radder today than it was yesterday... <span>since 1997.</span></h3>
+				</div>
+			</div><!--.main-header-wrapper -->
 		</header>

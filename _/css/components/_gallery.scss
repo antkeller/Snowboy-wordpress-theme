@@ -13,11 +13,23 @@
         width: auto;
         margin: 0 auto;
       }
+
+      .gallery-caption {
+        text-align: center;
+        margin-top: 5px;
+        margin-bottom: 0;
+      }
     }
   }
 
   #sync2 {
-    padding-top: 30px;
+    padding-top: 20px;
+
+    .owl-item {
+      img {
+        cursor: pointer;
+      }
+    }
   }
 
   #sync1,
