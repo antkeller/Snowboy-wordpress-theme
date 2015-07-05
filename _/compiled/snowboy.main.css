@@ -184,32 +184,37 @@ body {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000313}}
+footer {
+  text-align: center;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000317}}
 p {
   margin-bottom: 20px;
   line-height: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000318}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000322}}
 a {
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000325}}
 a:hover, a:focus {
   color: #FF0000;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000327}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000331}}
 img, video, object {
   max-width: 100%;
   height: auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000333}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000337}}
 h1, .h1 {
   line-height: 1.2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000337}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000341}}
 h2, .h2 {
   line-height: 1.2;
   font-size: 1.75em;
@@ -218,24 +223,24 @@ h2, .h2 {
   text-transform: uppercase;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000345}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000349}}
 h3, .h3 {
   line-height: 1.2;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000351}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000355}}
 ol {
   margin-left: 1.5em;
   line-height: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000356}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000360}}
 ul {
   list-style: none;
   line-height: 1.5;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000362}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000366}}
 blockquote {
   font-style: italic;
   border-left: 1px solid #808080;
@@ -244,20 +249,20 @@ blockquote {
   margin-bottom: 20px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000370}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000374}}
 #wrapper {
   max-width: 1240px;
   margin: 0 auto;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000376}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000380}}
 .section-heading {
   padding-bottom: 10px;
   text-transform: uppercase;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000382}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000386}}
 .about-section {
   padding-bottom: 10px;
   padding-top: 30px;
@@ -265,23 +270,23 @@ blockquote {
   clear: both;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000389}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000393}}
 .services-section {
   padding-bottom: 30px;
   padding-top: 30px;
   text-align: center;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\0000396}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003100}}
 .galleries-section {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003100}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003104}}
 .galleries-section .section-heading {
   padding-bottom: 15px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003104}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003108}}
 .galleries-section h4 {
   text-align: center;
   text-transform: uppercase;
@@ -289,28 +294,28 @@ blockquote {
   font-size: 1.25em;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003112}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003116}}
 .contact-page {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003118}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003122}}
 .contact-page .section-content form {
   padding-top: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003124}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003128}}
 .shop-page {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003132}}
 .shop-page .section-content {
   min-height: 600px;
 }
 
 @media screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003142}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003146}}
   body {
     padding: 15px;
   }
@@ -566,36 +571,29 @@ header .menu-toggle.is-active span::after {
   padding-top: 30px;
   padding-bottom: 60px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000316}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000311}}
 .gallery-detail #sync1 .owl-item img {
   height: 200px;
   width: auto;
   margin: 0 auto;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000319}}
 .gallery-detail #sync2 {
   padding-top: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000328}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000323}}
 .gallery-detail #sync2 .owl-nav .owl-prev {
-  background: url("../img/sprite.png") -101px -10px;
+  background: url("../img/sprite.png") -246px -10px;
   width: 40px;
   height: 40px;
   position: absolute;
   top: 45%;
-  left: 5px;
+  left: 15px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000337}}
-.gallery-detail #sync2 .owl-nav .owl-next {
-  background: url("../img/sprite.png") -130px -10px;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 45%;
-  right: 5px;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000348}}
-.gallery-detail #sync2:hover .owl-prev {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000333}}
+.gallery-detail #sync2 .owl-nav .owl-prev:hover {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
@@ -607,8 +605,19 @@ header .menu-toggle.is-active span::after {
   -o-transform: translate(-10px, 0);
   transform: translate(-10px, 0);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000353}}
-.gallery-detail #sync2:hover .owl-next {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000339}}
+.gallery-detail #sync2 .owl-nav .owl-next {
+  background: url("../img/sprite.png") -180px -10px;
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  opacity: 0.7;
+  filter: alpha(opacity=70);
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000349}}
+.gallery-detail #sync2 .owl-nav .owl-next:hover {
   -webkit-transition: all 300ms ease-in-out;
   -moz-transition: all 300ms ease-in-out;
   -ms-transition: all 300ms ease-in-out;
@@ -622,7 +631,7 @@ header .menu-toggle.is-active span::after {
 }
 
 @media screen and (min-width: 480px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000365}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000362}}
   .gallery-detail #sync1 .owl-item img {
     height: 300px;
     width: auto;
@@ -630,7 +639,7 @@ header .menu-toggle.is-active span::after {
   }
 }
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000379}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery-details\.scss}line{font-family:\0000376}}
   .gallery-detail #sync1 .owl-item img {
     height: 500px;
     width: auto;

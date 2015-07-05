@@ -25,7 +25,7 @@ if ( basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]) ) header('Locat
           <div class="info">
             <p class="slider-quote"><span><?php echo $slider['quote']; ?> </span>- <?php echo $slider['author']; ?></p>
             <p class="slider-subject"><span><?php echo $slider['subject']; ?> -</span> Photo by <?php echo $slider['photocred']; ?></p>
-          </div>
+          </div>  
         </div><!--.slide-item -->
 
         <?php endforeach; ?>

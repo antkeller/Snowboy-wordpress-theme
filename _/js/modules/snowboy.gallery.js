@@ -64,6 +64,7 @@ SNOWBOY.Gallery.prototype = {
       loop: false,
       pagination: true,
       responsiveRefreshRate: 100,
+      slideBy: 3,
       nav: true,
       navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>'],
       // startPosition: 'URLHash'
@@ -77,16 +78,20 @@ SNOWBOY.Gallery.prototype = {
 					items: 5,
 					margin: 10
 				},
-				768:{
-					items: 6,
-					margin: 15
-				},
-        992:{
+        600:{
+          items: 6,
+          margin: 10
+        },
+				800:{
 					items: 7,
 					margin: 15
 				},
+        1000:{
+					items: 8,
+					margin: 15
+				},
         1200: {
-          items: 7,
+          items: 9,
           margin: 15
         }
 			}
