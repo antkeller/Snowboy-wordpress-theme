@@ -318,10 +318,10 @@ blockquote {
   min-height: 600px;
 }
 
-@media screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003150}}
+@media screen and (min-width: 768px) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003142}}
   body {
-    padding: 15px;
+    padding: 15px 25px;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\000035}}
@@ -649,7 +649,7 @@ header .menu-toggle.is-active span::after {
 @media screen and (min-width: 768px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery\.scss}line{font-family:\0000379}}
   .gallery-detail #sync1 .owl-item img {
-    height: 500px;
+    height: 460px;
     width: auto;
     margin: 0 auto;
   }

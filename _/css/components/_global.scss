@@ -138,20 +138,8 @@ blockquote {
   }
 }
 
-@media screen and (min-width: $breakpoint-small) {
-
-}
-
 @media screen and (min-width: $breakpoint-medium) {
-
-}
-
-@media screen and (min-width: $breakpoint-large) {
   body {
-    padding: 15px;
+    padding: 15px 25px;
   }
-}
-
-@media screen and (min-width: $breakpoint-xlarge) {
-
 }
