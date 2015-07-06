@@ -635,7 +635,7 @@ header .menu-toggle.is-active span::after {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery\.scss}line{font-family:\0000325}}
 .gallery-detail #sync2 {
-  padding-top: 20px;
+  padding-top: 5px;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery\.scss}line{font-family:\0000329}}
 .gallery-detail #sync2 .owl-item img {
