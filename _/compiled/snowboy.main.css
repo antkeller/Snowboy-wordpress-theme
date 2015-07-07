@@ -407,8 +407,8 @@ header nav .menu li a {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\0000377}}
 header .site-description h3 {
-  font-family: "Impact", Charcoal, sans-serif;
-  font-weight: 900;
+  font-family: Impact, "Impact", Charcoal, sans-serif;
+  font-weight: normal;
   letter-spacing: 1px;
   text-align: right;
   text-transform: uppercase;
@@ -562,7 +562,7 @@ header .menu-toggle.is-active span::after {
   }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003230}}
   header .main-header-wrapper .site-description {
-    width: 70%;
+    width: 67%;
     position: absolute;
     bottom: 3px;
     right: 0;
@@ -613,7 +613,7 @@ header .menu-toggle.is-active span::after {
 @media screen and (min-width: 1250px) {
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_header\.scss}line{font-family:\00003309}}
   header .main-header-wrapper .site-description h3 {
-    font-size: 1.9em;
+    font-size: 1.92em;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/antkeller\/Projects\/snowboy-wordpress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_gallery\.scss}line{font-family:\000035}}

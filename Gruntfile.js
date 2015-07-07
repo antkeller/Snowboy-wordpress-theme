@@ -1,7 +1,8 @@
 module.exports = function (grunt) {
     // VARIABLES
     var headerScripts = [
-        '_/js/lib/modernizr-2.7.2.js'
+        '_/js/lib/modernizr-2.7.2.js',
+        '_/js/lib/snowboy-impact.js'
     ];
     var footerScripts = [
         '_/js/lib/jquery-1.11.1.js',

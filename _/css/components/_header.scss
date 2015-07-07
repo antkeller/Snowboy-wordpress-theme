@@ -76,7 +76,7 @@ header {
   .site-description {
     h3 {
       font-family: $taglineFont;
-      font-weight: 900;
+      font-weight: normal;
       letter-spacing: 1px;
       text-align: right;
       text-transform: uppercase;
@@ -228,7 +228,7 @@ header {
       }
 
       .site-description {
-        width: 70%;
+        width: 67%;
         position: absolute;
         bottom: 3px;
         right: 0;
@@ -307,7 +307,7 @@ header {
     .main-header-wrapper {
       .site-description {
         h3 {
-          font-size: 1.9em;
+          font-size: 1.92em;
         }
       }
     }
