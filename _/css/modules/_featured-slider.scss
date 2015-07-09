@@ -8,7 +8,8 @@
   clear: both;
 
   .section-content {
-    margin: 30px 0;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   .slide-list {
@@ -103,6 +104,18 @@
     .slide-list {
       .slide-item .image {
         height: 650px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xxlarge) {
+  .featured-slider {
+    height: 700px;
+
+    .slide-list {
+      .slide-item .image {
+        height: 700px;
       }
     }
   }

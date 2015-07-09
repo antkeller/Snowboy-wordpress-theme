@@ -247,7 +247,7 @@ header {
     .main-header-wrapper {
       .site-description {
         h3 {
-          font-size: 1.2em;
+          font-size: 1.15em;
         }
       }
     }
@@ -295,19 +295,31 @@ header {
       .site-description {
         width: 70%;
         h3 {
-          font-size: 1.8em;
+          font-size: 1.65em;
         }
       }
     }
   }
 }
 
-@media screen and (min-width: 1250px) {
+@media screen and (min-width: 1300px) {
   header {
     .main-header-wrapper {
       .site-description {
         h3 {
-          font-size: 1.92em;
+          font-size: 1.85em;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $breakpoint-xxlarge) {
+  header {
+    .main-header-wrapper {
+      .site-description {
+        h3 {
+          font-size: 2em;
         }
       }
     }

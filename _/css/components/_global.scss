@@ -72,7 +72,7 @@ blockquote {
 }
 
 #wrapper {
-  max-width: 1240px;
+  max-width: 1260px;
   margin: 0 auto;
   // border: 1px solid red;
 }
@@ -140,6 +140,18 @@ blockquote {
 
 @media screen and (min-width: $breakpoint-medium) {
   body {
-    padding: 15px 25px;
+    padding: 15px 30px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xlarge) {
+  body {
+    padding: 15px 70px;
+  }
+}
+
+@media screen and (min-width: $breakpoint-xxlarge) {
+  body {
+
   }
 }
