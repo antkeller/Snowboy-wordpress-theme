@@ -5,8 +5,7 @@
  * The area of the page that contains comments and the comment form.
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme
  */
 if (!empty($_SERVER['SCRIPT_FILENAME']) && 'comments.php' == basename($_SERVER['SCRIPT_FILENAME']))
 	die ('Please do not load this page directly. Thanks!');
@@ -23,7 +22,7 @@ if ( post_password_required() ) { ?>
 ?>
 
 <?php if ( have_comments() ) : ?>
-	
+
 	<h2 id="comments"><?php comments_number(__('No Responses','html5reset'), __('One Response','html5reset'), __('% Responses','html5reset') );?></h2>
 
 	<div class="navigation">
@@ -39,7 +38,7 @@ if ( post_password_required() ) { ?>
 		<div class="next-posts"><?php previous_comments_link() ?></div>
 		<div class="prev-posts"><?php next_comments_link() ?></div>
 	</div>
-	
+
  <?php else : // this is displayed if there are no comments so far ?>
 
 	<?php if ( comments_open() ) : ?>
@@ -49,7 +48,7 @@ if ( post_password_required() ) { ?>
 		<p>Comments are closed.</p>
 
 	<?php endif; ?>
-	
+
 <?php endif; ?>
 
 <?php if ( comments_open() ) : ?>
@@ -101,13 +100,13 @@ if ( post_password_required() ) { ?>
 			<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 			<?php comment_id_fields(); ?>
 		</div>
-		
+
 		<?php do_action('comment_form', $post->ID); ?>
 
 	</form>
 
 	<?php endif; // If registration required and not logged in ?>
-	
+
 </div>
 
 <?php endif; ?>

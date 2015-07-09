@@ -13,8 +13,7 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme
  */
 
 get_header(); ?>
@@ -43,17 +42,17 @@ get_header(); ?>
 
 			<?php /* If this is a paged archive */ } elseif (isset($_GET['paged']) && !empty($_GET['paged'])) { ?>
 				<h2 class="pagetitle">Blog Archives</h2>
-			
+
 			<?php } ?>
 
 			<?php post_navigation(); ?>
 
 			<?php while (have_posts()) : the_post(); ?>
-			
+
 				<article <?php post_class() ?>>
-				
+
 						<h2 id="post-<?php the_ID(); ?>"><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h2>
-					
+
 						<?php posted_on(); ?>
 
 						<div class="entry">
@@ -65,7 +64,7 @@ get_header(); ?>
 			<?php endwhile; ?>
 
 			<?php post_navigation(); ?>
-			
+
 	<?php else : ?>
 
 		<h2>Nothing Found</h2>

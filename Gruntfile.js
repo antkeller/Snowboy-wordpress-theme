@@ -56,7 +56,7 @@ module.exports = function (grunt) {
         cssmin: {
             prod: {
                 options: {
-                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Mervin Mfg. | mervin.com */\n'
+                    banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Snowboy Productions | snowboyproductions.us */\n'
                 },
                 files: {
                     '_/css/snowboy.main.min.css': ['_/css/snowboy.main.css']
@@ -65,7 +65,7 @@ module.exports = function (grunt) {
         },
         uglify: {
             options: {
-                banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Mervin Mfg. | mervin.com */\n'
+                banner: '/*! <%= pkg.name %> v<%= pkg.version %> | (c) <%= grunt.template.today("yyyy") %> Snowboy Productions | snowboyproductions.us */\n'
             },
             prod: {
                 files: {

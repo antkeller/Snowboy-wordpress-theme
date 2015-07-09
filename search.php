@@ -3,8 +3,7 @@
  * The template for displaying Search Results pages
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme-Template
  */
  get_header(); ?>
 

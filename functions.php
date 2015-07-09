@@ -1,6 +1,6 @@
 <?php
 /**
- * Mervin Mfg. WordPress Theme Template functions and definitions
+ * Snowboy Productions WordPress Theme Template functions and definitions
  *
  * Set up the theme and provides some helper functions, which are used in the
  * theme as custom template tags. Others are attached to action and filter
@@ -21,8 +21,7 @@
  * @link http://codex.wordpress.org/Plugin_API
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme
  */
 
 	// Theme Setup (based on twentythirteen: http://make.wordpress.org/core/tag/twentythirteen/)
@@ -81,45 +80,9 @@
 //		 Add a page number if necessary.
 		if ( $paged >= 2 || $page >= 2 )
 			$title = "$title $sep " . sprintf( __( 'Page %s', 'html5reset' ), max( $paged, $page ) );
-//FIX
-//		if (function_exists('is_tag') && is_tag()) {
-//		   single_tag_title("Tag Archive for &quot;"); echo '&quot; - '; }
-//		elseif (is_archive()) {
-//		   wp_title(''); echo ' Archive - '; }
-//		elseif (is_search()) {
-//		   echo 'Search for &quot;'.wp_specialchars($s).'&quot; - '; }
-//		elseif (!(is_404()) && (is_single()) || (is_page())) {
-//		   wp_title(''); echo ' - '; }
-//		elseif (is_404()) {
-//		   echo 'Not Found - '; }
-//		if (is_home()) {
-//		   bloginfo('name'); echo ' - '; bloginfo('description'); }
-//		else {
-//		    bloginfo('name'); }
-//		if ($paged>1) {
-//		   echo ' - page '. $paged; }
-
 		return $title;
 	}
 	add_filter( 'wp_title', 'html5reset_wp_title', 10, 2 );
-
-
-
-
-//OLD STUFF BELOW
-
-
-	// Load jQuery
-	if ( !function_exists( 'core_mods' ) ) {
-		function core_mods() {
-			if ( !is_admin() ) {
-				wp_deregister_script( 'jquery' );
-				wp_register_script( 'jquery', ( "//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" ), false);
-				wp_enqueue_script( 'jquery' );
-			}
-		}
-		add_action( 'wp_enqueue_scripts', 'core_mods' );
-	}
 
 	// Clean up the <head>, if you so desire.
 	//	function removeHeadLinks() {

@@ -3,8 +3,7 @@
  * The template for displaying 404 pages (Not Found)
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme
  */
 
 get_header(); ?>

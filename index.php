@@ -10,8 +10,7 @@
  * @link http://codex.wordpress.org/Template_Hierarchy
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme
  */
  get_header(); ?>
 
@@ -29,7 +28,7 @@
 
 			<footer class="postmetadata">
 				<?php the_tags(__('Tags: ','html5reset'), ', ', '<br />'); ?>
-				<?php _e('Posted in','html5reset'); ?> <?php the_category(', ') ?> | 
+				<?php _e('Posted in','html5reset'); ?> <?php the_category(', ') ?> |
 				<?php comments_popup_link(__('No Comments &#187;','html5reset'), __('1 Comment &#187;','html5reset'), __('% Comments &#187;','html5reset')); ?>
 			</footer>
 

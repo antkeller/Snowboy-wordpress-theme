@@ -7,8 +7,7 @@
  * other 'pages' on your WordPress site will use a different template.
  *
  * @package WordPress
- * @subpackage MervinMfg-WordPress-Theme-Template
- * @since Mervin Mfg WordPress Theme Template 1.0.0
+ * @subpackage Snowboy-Productions-WordPress-Theme-Template
  */
  get_header(); ?>
 

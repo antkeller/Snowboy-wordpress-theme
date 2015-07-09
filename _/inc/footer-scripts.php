@@ -7,5 +7,4 @@
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/lib/jquery.unveil.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/snowboy.main.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/modules/snowboy.featured-slider.js"></script>
-	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/components/snowboy.component.js"></script>
 	<script type="text/javascript" src="<?php echo get_template_directory_uri(); ?>/_/js/components/snowboy.gallery.js"></script>
