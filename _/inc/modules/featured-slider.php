@@ -24,7 +24,7 @@ if ( basename(__FILE__) == basename($_SERVER["SCRIPT_FILENAME"]) ) header('Locat
           <div class="image owl-lazy" data-src="<?php echo $slider['image']['url']; ?>"></div>
           <div class="info">
             <p class="slider-quote"><span><?php echo $slider['quote']; ?> </span>- <?php echo $slider['author']; ?></p>
-            <p class="slider-subject"><span><?php echo $slider['subject']; ?> -</span> Photo by <?php echo $slider['photocred']; ?></p>
+            <p class="slider-subject"><span><?php echo $slider['subject']; ?> -</span> <?php echo $slider['photocred']; ?> Photo</p>
           </div>
         </div><!--.slide-item -->
 
