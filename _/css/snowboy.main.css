@@ -126,14 +126,14 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
   header .main-header-wrapper h1 { padding-bottom: 0; width: 33%; }
   header .main-header-wrapper .site-description { width: 67%; position: absolute; bottom: 3px; right: 0; }
   header .main-header-wrapper .site-description h3 { text-align: right; font-size: 1em; } }
-@media screen and (min-width: 880px) { header .main-header-wrapper .site-description h3 { font-size: 1.15em; } }
+@media screen and (min-width: 880px) { header .main-header-wrapper .site-description h3 { font-size: 1.17em; } }
 @media screen and (min-width: 992px) { header .main-header-wrapper .site-description h3 { font-size: 1.35em; }
   .contact-page .section-content { min-height: 600px; } }
 @media screen and (min-width: 1096px) { header .main-header-wrapper .site-description h3 { font-size: 1.55em; } }
 @media screen and (min-width: 1200px) { header .main-header-wrapper h1 { width: 30%; }
   header .main-header-wrapper .site-description { width: 70%; }
   header .main-header-wrapper .site-description h3 { font-size: 1.65em; } }
-@media screen and (min-width: 1300px) { header .main-header-wrapper .site-description h3 { font-size: 1.85em; } }
+@media screen and (min-width: 1270px) { header .main-header-wrapper .site-description h3 { font-size: 1.77em; } }
 @media screen and (min-width: 1400px) { header .main-header-wrapper .site-description h3 { font-size: 2em; } }
 .gallery-detail { padding-top: 30px; padding-bottom: 60px; }
 .gallery-detail #sync1 .owl-item img { height: 200px; width: auto; margin: 0 auto; }
