@@ -28,8 +28,8 @@ SNOWBOY.FeaturedSlider.prototype = {
 				dots: self.config.dots,
 				lazyLoad: true,
 				autoplay: true,
-				autoplayTimeout: 8000,
-				autoplayHoverPause: true,
+				autoplayTimeout: 10000,
+				autoplayHoverPause: false,
 				loop: self.config.loop
 			});
 		}

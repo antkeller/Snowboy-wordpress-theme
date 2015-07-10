@@ -11,6 +11,7 @@ body {
 }
 
 footer {
+  padding-top: 20px;
   text-align: center;
 }
 
@@ -72,7 +73,7 @@ blockquote {
 }
 
 #wrapper {
-  max-width: 1260px;
+  max-width: 1200px;
   margin: 0 auto;
   // border: 1px solid red;
 }
@@ -84,8 +85,8 @@ blockquote {
 }
 
 .about-section {
-  padding-bottom: 10px;
-  padding-top: 30px;
+  padding-bottom: 15px;
+  padding-top: 25px;
   text-align: center;
   clear: both;
 }
@@ -98,7 +99,7 @@ blockquote {
 
 // home page gallery link styles
 .galleries-section {
-  padding-top: 30px;
+  padding-top: 25px;
   padding-bottom: 10px;
 
   .section-heading {
@@ -140,18 +141,22 @@ blockquote {
 
 @media screen and (min-width: $breakpoint-medium) {
   body {
-    padding: 15px 30px;
+    padding: 10px 10px 30px;
   }
 }
+
+@media screen and (min-width: $breakpoint-large) {
+  body {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+
 
 @media screen and (min-width: $breakpoint-xlarge) {
   body {
-    padding: 15px 70px;
-  }
-}
-
-@media screen and (min-width: $breakpoint-xxlarge) {
-  body {
-
+    padding-left: 80px;
+    padding-right: 80px;
   }
 }

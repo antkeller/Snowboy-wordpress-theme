@@ -3,13 +3,12 @@
 // ==========================================================================
 
 .featured-slider {
-  height: 250px;
+  height: 235px;
   position: relative;
   clear: both;
 
   .section-content {
-    margin-bottom: 30px;
-    margin-top: 30px;
+    margin-bottom: 25px;
   }
 
   .slide-list {
@@ -19,7 +18,7 @@
         background-position: 50% 50%;
         background-repeat: none;
         background-size: cover;
-        height: 250px;
+        height: 235px;
         overflow: hidden;
       }
 
@@ -48,10 +47,20 @@
 
 @media screen and (min-width: $breakpoint-small) {
   .featured-slider {
-    height: 400px;
+    height: 325px;
 
     .slide-list .slide-item .image {
-      height: 400px;
+      height: 325px;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .featured-slider {
+    height: 415px;
+
+    .slide-list .slide-item .image {
+      height: 415px;
     }
   }
 }
@@ -85,7 +94,31 @@
   }
 }
 
+@media screen and (min-width: 880px) {
+  .featured-slider {
+    height: 550px;
+
+    .slide-list {
+      .slide-item .image {
+        height: 550px;
+      }
+    }
+  }
+}
+
 @media screen and (min-width: $breakpoint-large) {
+  .featured-slider {
+    height: 575px;
+
+    .slide-list {
+      .slide-item .image {
+        height: 575px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1096px) {
   .featured-slider {
     height: 600px;
 
@@ -99,23 +132,23 @@
 
 @media screen and (min-width: $breakpoint-xlarge) {
   .featured-slider {
-    height: 650px;
+    height: 615px;
 
     .slide-list {
       .slide-item .image {
-        height: 650px;
+        height: 615px;
       }
     }
   }
 }
 
-@media screen and (min-width: $breakpoint-xxlarge) {
+@media screen and (min-width: 1300px) {
   .featured-slider {
-    height: 700px;
+    height: 675px;
 
     .slide-list {
       .slide-item .image {
-        height: 700px;
+        height: 675px;
       }
     }
   }
