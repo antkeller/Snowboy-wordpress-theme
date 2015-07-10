@@ -27,12 +27,12 @@
 	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
-	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
+	<meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-share.jpg" />
 	<meta property="og:type" content="website" />
 	<meta property="og:site_name" content="Snowboy Productions" />
 	<meta itemprop="name" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta itemprop="description" content="<?php bloginfo('description'); ?>" />
-	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-icon.png" />
+	<meta itemprop="image" content="<?php echo get_template_directory_uri(); ?>/_/img/social-share.jpg" />
 	<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/_/img/favicon.ico" />
 	<link rel="apple-touch-icon" href="<?php echo get_template_directory_uri(); ?>/_/img/apple-icon-precomposed.png" />
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
