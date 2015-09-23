@@ -91,6 +91,51 @@
 	//    }
 	//    add_action('init', 'removeHeadLinks');
 
+	// woocommerce
+	remove_action( 'woocommerce_before_main_content', 'woocommerce_output_content_wrapper', 10);
+	remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wrapper_end', 10);
+
+	add_action('woocommerce_before_main_content', 'my_theme_wrapper_start', 10);
+	add_action('woocommerce_after_main_content', 'my_theme_wrapper_end', 10);
+
+	function my_theme_wrapper_start() {
+	  echo '<section class="row"><div class="section-content>"';
+	}
+
+	function my_theme_wrapper_end() {
+	  echo '</div></section>';
+	}
+
+	add_action( 'after_setup_theme', 'woocommerce_support' );
+
+	function woocommerce_support() {
+	    add_theme_support( 'woocommerce' );
+	}
+
+	// woocommerce product summary
+	remove_action( 'woocommerce_after_single_product_summary', 'woocommerce_output_product_data_tabs', 10 );
+
+	function woocommerce_template_product_description() {
+	woocommerce_get_template( 'single-product/tabs/description.php' );
+	}
+	add_action( 'woocommerce_single_product_summary', 'woocommerce_template_product_description', 60 );
+
+	// woocommerce lightbox
+	add_action( 'wp_enqueue_scripts', 'frontend_scripts_include_lightbox' );
+
+	function frontend_scripts_include_lightbox() {
+	  global $woocommerce;
+
+	  $suffix      = defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ? '' : '.min';
+	  $lightbox_en = get_option( 'woocommerce_enable_lightbox' ) == 'yes' ? true : false;
+
+	  if ( $lightbox_en ) {
+	    wp_enqueue_script( 'prettyPhoto', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto' . $suffix . '.js', array( 'jquery' ), '3.1.5', true );
+	    wp_enqueue_script( 'prettyPhoto-init', $woocommerce->plugin_url() . '/assets/js/prettyPhoto/jquery.prettyPhoto.init' . $suffix . '.js', array( 'jquery' ), $woocommerce->version, true );
+	    wp_enqueue_style( 'woocommerce_prettyPhoto_css', $woocommerce->plugin_url() . '/assets/css/prettyPhoto.css' );
+	  }
+	}
+
 	// Custom Menu
 	register_nav_menu( 'primary', __( 'Navigation Menu', 'html5reset' ) );
 

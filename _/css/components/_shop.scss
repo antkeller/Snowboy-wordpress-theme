@@ -1,0 +1,255 @@
+// ==========================================================================
+// COMPONENTS/_SHOP.SCSS
+// ==========================================================================
+
+// woocommerce shop overview
+
+.woocommerce {
+
+  #wrapper {
+    .container-fluid {
+      background: $white;
+    }
+  }
+
+  header {
+    background: $black;
+
+    .site-description {
+      h3 {
+        color: $white;
+      }
+    }
+  }
+
+  p, h1, h2, h3, h4, h5 {
+    color: $black;
+  }
+
+  .woocommerce-result-count {
+    display: none;
+  }
+
+  .woocommerce-ordering {
+    display: none;
+  }
+
+  div.product {
+    clear: both;
+    border-bottom: 1px solid #666;
+    padding-top: 25px;
+
+    .summary {
+      h2 {
+        display: none;
+      }
+
+      .product_title {
+        font-family: $taglineFont;
+        font-weight: normal;
+        letter-spacing: 1px;
+        text-align: right;
+        text-transform: uppercase;
+        font-size: 2.25em;
+        text-align: center;
+        padding-bottom: 5px;
+      }
+
+      .price {
+        width: 50%;
+        background: $black;
+        color: $white;
+        text-align: center;
+        margin: 0 auto;
+        margin-bottom: 20px;
+      }
+
+      .single_add_to_cart_button {
+        background: $black;
+        // display: block;
+
+        &:hover,
+        &:focus {
+          background: $red;
+        }
+      }
+
+      // .single_variation_wrap {
+      //   display: block !important;
+      // }
+
+      .in-stock {
+        color: $gray !important;
+      }
+
+      // .select#size {
+      //   height: 30px !important;
+      //   width: 100%;
+      // }
+
+      .product_meta {
+        display: none;
+      }
+    }
+
+    .variations_form {
+      .variations {
+        .label {
+          color: $black;
+        }
+      }
+
+      .reset_variations {
+        display: none !important;
+      }
+    }
+  }
+
+  a.button {
+    background: $black !important;
+    color: $white !important;
+
+    &:hover,
+    &:focus {
+      background: $red !important;
+    }
+  }
+
+  .woocommerce-error {
+    border-top-color: $red !important;
+
+    &:before {
+      color: $red !important;
+    }
+  }
+}
+
+// show product-thumbnail on mobile
+// .woocommerce table.cart .product-thumbnail,
+// .woocommerce-page table.cart .product-thumbnail {
+//   display: block !important;
+// }
+
+// shopping cart styles
+.woocommerce-cart {
+  .woocommerce {
+    background: $white;
+  }
+
+  .cart-empty,
+  .return-to-shop {
+    padding: 1em;
+  }
+
+  .wc-proceed-to-checkout {
+    padding: 1em !important;
+  }
+
+  .cart-subtotal {
+    th {
+      padding-right: 7px !important;
+    }
+  }
+
+  .shipping {
+    th {
+      padding-right: 7px !important;
+    }
+  }
+
+  table {
+    th,
+    td {
+      color: $black;
+    }
+
+
+    &.cart {
+      // th {
+      //   color: $black;
+      //   // display: none;
+      // }
+
+
+      // td {
+      //   display: list-item;
+      //   list-style-type: none;
+      //   clear: both;
+      // }
+
+      .product-thumbnail {
+        a img {
+          width: 100px;
+          height: 100px;
+        }
+      }
+
+      .product-name {
+        color: black;
+
+        a {
+          color: black;
+
+          &:hover,
+          &:focus {
+            color: $red;
+          }
+        }
+      }
+
+      .product-price {
+        color: black;
+      }
+
+      .product-quantity {
+        color: black;
+      }
+
+      .product-subtotal {
+        color: black;
+      }
+    }
+  }
+}
+
+.woocommerce-checkout {
+
+  .woocommerce {
+    background: $white;
+    padding: 20px;
+
+    thead,
+    td,
+    th {
+      color: $black;
+    }
+
+    #customer_details {
+      padding-bottom: 30px;
+    }
+
+    input.button.alt {
+      background: #000;
+      color: #fff;
+
+      &:hover,
+      &:focus {
+        background: $red;
+      }
+    }
+  }
+
+  .payment_method_paypal {
+    label {
+      color: #000;
+    }
+
+    .about_paypal {
+      color: #000;
+
+      &:hover {
+        color: $red;
+      }
+    }
+  }
+}
