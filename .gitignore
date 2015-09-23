@@ -3,4 +3,4 @@ node_modules/
 _notes/
 *.log
 .sass-cache*
-/compiled/
+_/compiled/
