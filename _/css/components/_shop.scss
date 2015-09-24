@@ -7,6 +7,10 @@
 .woocommerce {
 
   #wrapper {
+    .page-description {
+      display: none;
+    }
+
     .container-fluid {
       background: $white;
     }
@@ -36,12 +40,17 @@
 
   div.product {
     clear: both;
-    border-bottom: 1px solid #666;
+    border-top: 1px solid #666;
     padding-top: 25px;
+    margin-top: -1px;
 
     .summary {
       h2 {
         display: none;
+      }
+
+      p {
+        text-align: center;
       }
 
       .product_title {
@@ -52,40 +61,71 @@
         text-transform: uppercase;
         font-size: 2.25em;
         text-align: center;
-        padding-bottom: 5px;
+        padding-bottom: 10px;
       }
 
       .price {
-        width: 50%;
+        width: 60%;
         background: $black;
         color: $white;
         text-align: center;
         margin: 0 auto;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+        padding: 2px 0;
       }
 
-      .single_add_to_cart_button {
-        background: $black;
-        // display: block;
+      .variations_form {
+        .variations {
+          margin: 0 auto;
+          margin-bottom: 20px;
 
-        &:hover,
-        &:focus {
-          background: $red;
+          tbody {
+            tr {
+              .label {
+                font-size: 1em;
+                text-transform: uppercase;
+              }
+
+              .value {
+
+                select {
+                  text-transform: uppercase;
+                  background: #fff;
+                  font-size: 1em;
+                }
+              }
+            }
+          }
+        }
+
+        .single_variation_wrap {
+          .quantity {
+            display: none !important;
+          }
         }
       }
 
-      // .single_variation_wrap {
-      //   display: block !important;
-      // }
+      .thumbnails {
+        padding-top: 20px;
+      }
+
+      .variations_button {
+        text-align: center;
+
+        .single_add_to_cart_button {
+          background: $black;
+          float: none;
+
+          &:hover,
+          &:focus {
+            background: $red;
+          }
+        }
+      }
 
       .in-stock {
         color: $gray !important;
       }
-
-      // .select#size {
-      //   height: 30px !important;
-      //   width: 100%;
-      // }
 
       .product_meta {
         display: none;
@@ -165,18 +205,6 @@
 
 
     &.cart {
-      // th {
-      //   color: $black;
-      //   // display: none;
-      // }
-
-
-      // td {
-      //   display: list-item;
-      //   list-style-type: none;
-      //   clear: both;
-      // }
-
       .product-thumbnail {
         a img {
           width: 100px;
