@@ -88,6 +88,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 		?></small></p>
 	<?php endif; ?>
 
+	<div class="shipping-message">
+		<p>Free shipping on all orders of $40.00 or more!</p>
+	</div>
+
 	<div class="wc-proceed-to-checkout">
 
 		<?php do_action( 'woocommerce_proceed_to_checkout' ); ?>

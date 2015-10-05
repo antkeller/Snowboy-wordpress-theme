@@ -97,6 +97,7 @@ header .social-header ul li { display: inline-block; margin-left: 5px; }
 header .social-header ul li span { background: url("../img/sprite.png") -71px -10px; width: 32px; height: 30px; display: inline-block; }
 header .social-header ul li span.facebook { background-position: -35px -10px; }
 header .social-header ul li span.instagram { background-position: 0 -10px; }
+header .social-header ul li.cart-icon { width: 32px; height: 30px; margin-right: 20px; }
 header h1 { padding-bottom: 20px; }
 header nav { display: block; clear: both; max-height: 0; -webkit-transition: all 500ms ease-in-out; -moz-transition: all 500ms ease-in-out; -ms-transition: all 500ms ease-in-out; -o-transition: all 500ms ease-in-out; transition: all 500ms ease-in-out; -webkit-opacity: 0; -moz-opacity: 0; -ms-opacity: 0; -o-opacity: 0; opacity: 0; overflow: hidden; }
 header nav.active { display: block; max-height: 700px; -webkit-opacity: 1; -moz-opacity: 1; -ms-opacity: 1; -o-opacity: 1; opacity: 1; }
@@ -202,6 +203,7 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
 .woocommerce-cart .wc-proceed-to-checkout { padding: 1em !important; }
 .woocommerce-cart .cart-subtotal th { padding-right: 7px !important; }
 .woocommerce-cart .shipping th { padding-right: 7px !important; }
+.woocommerce-cart .shipping-message p { text-align: center; font-weight: 700; }
 .woocommerce-cart table th, .woocommerce-cart table td { color: #000; }
 .woocommerce-cart table.cart .product-thumbnail a img { width: 100px; height: 100px; }
 .woocommerce-cart table.cart .product-name { color: black; }
