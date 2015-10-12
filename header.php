@@ -49,10 +49,10 @@
 		<header id="header" role="banner">
 			<div class="social-header">
 				<ul>
-					<li class="cart-icon" title="Shopping Cart"><a href="/cart/"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-cart-icon.png" alt="shopping cart"/></a></li>
-	        <li title="Instagram"><a href="https://instagram.com/snowboyproductions/" target="_blank"><span class="instagram"></span></a></li>
-	        <li title="Facebook"><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><span class="facebook"></span></a></li>
-	        <li title="Twitter"><a href="https://twitter.com/snowboyus" target="_blank"><span class="twitter"></span></a></li>
+					<li class="cart-icon" title="Shopping Cart"><a href="/cart/"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-cart-icon.png" alt="Shopping cart"/></a></li>
+	        <li title="Instagram" class="instagram"><a href="https://instagram.com/snowboyproductions/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/instagram-icon.png" alt="Twitter"/></a></li>
+	        <li title="Facebook" class="facebook"><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/facebook-icon.png" alt="Twitter"/></a></li>
+	        <li title="Twitter" class="twitter"><a href="https://twitter.com/snowboyus" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/twitter-icon.png" alt="Twitter"/></a></li>
 	      </ul>
 			</div>
 			<a id="primary-navigation" class="menu-toggle">

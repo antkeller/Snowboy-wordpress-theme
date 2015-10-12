@@ -23,21 +23,9 @@
       li {
         display: inline-block;
         margin-left: 5px;
-
-        span {
-          background: url('../img/sprite.png') -71px -10px;
-          width: 32px;
-          height: 30px;
-          display: inline-block;
-
-          &.facebook {
-            background-position: -35px -10px;
-          }
-
-          &.instagram {
-            background-position: 0 -10px;
-          }
-        }
+        height: 30px;
+        width: 32px;
+        
       }
     }
   }

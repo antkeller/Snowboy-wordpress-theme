@@ -19,26 +19,11 @@ header {
 
       li {
         display: inline-block;
+        height: 30px;
         margin-left: 5px;
-
-        span {
-          background: url('../img/sprite.png') -71px -10px;
-          width: 32px;
-          height: 30px;
-          display: inline-block;
-
-          &.facebook {
-            background-position: -35px -10px;
-          }
-
-          &.instagram {
-            background-position: 0 -10px;
-          }
-        }
+        width: 32px;
 
         &.cart-icon {
-          width: 32px;
-          height: 30px;
           margin-right: 20px;
         }
       }
