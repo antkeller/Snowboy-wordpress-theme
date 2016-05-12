@@ -25,6 +25,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 			<td><?php wc_cart_totals_subtotal_html(); ?></td>
 		</tr>
 
+		<?php foreach ( WC()->cart->get_coupons( 'cart' ) as $code => $coupon ) : ?>
+			<tr class="coupons">
+				<th><?php _e('Discount', 'woocommerce' ); ?></th>
+				<th class="amount"><?php echo ($coupon->amount) . '% OFF' ?></th>
+			</tr>
+		<?php endforeach; ?>
+
+
 		<?php if ( WC()->cart->needs_shipping() && WC()->cart->show_shipping() ) : ?>
 
 			<?php do_action( 'woocommerce_cart_totals_before_shipping' ); ?>

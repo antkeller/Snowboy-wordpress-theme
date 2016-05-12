@@ -5,7 +5,6 @@
 // woocommerce shop overview
 
 .woocommerce {
-  overflow: hidden;
 
   #wrapper {
     .page-description {
@@ -172,6 +171,34 @@
 // }
 
 // shopping cart styles
+.woocommerce table.shop_table td {
+  padding: 5px !important;
+
+  dd {
+    margin-left: 0 !important;
+  }
+}
+
+.cart_totals {
+  .coupons {
+    th.amount {
+      text-align: left;
+    }
+  }
+}
+
+.woocommerce table.shop_table {
+  font-size: .75em !important;
+
+  .button {
+    height: 30px;
+  }
+
+  .input-text {
+    height: 30px;
+  }
+}
+
 .woocommerce-cart {
 
   .woocommerce {
@@ -232,10 +259,6 @@
         // .input {
         //   width: 42%;
         // }
-
-        .input-text+.button {
-          float: left !important;
-        }
       }
 
       .product-name {
@@ -321,5 +344,9 @@
   .woocommerce table.cart td.actions .input-text,
   .woocommerce table.cart td.actions input {
     width: 150px !important;
+  }
+
+  .woocommerce table.shop_table {
+    font-size: .95em !important;
   }
 }

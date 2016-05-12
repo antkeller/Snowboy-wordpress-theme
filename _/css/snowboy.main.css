@@ -163,7 +163,6 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
 .clients-section ul li:after { content: " / "; }
 .clients-section ul li:last-child:after { content: ""; }
 
-.woocommerce { overflow: hidden; }
 .woocommerce #wrapper .page-description { display: none; }
 .woocommerce #wrapper .container-fluid { background: #fff; }
 .woocommerce header { background: #000; }
@@ -193,6 +192,15 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
 .woocommerce .woocommerce-error { border-top-color: #FF0000 !important; }
 .woocommerce .woocommerce-error:before { color: #FF0000 !important; }
 
+.woocommerce table.shop_table td { padding: 5px !important; }
+.woocommerce table.shop_table td dd { margin-left: 0 !important; }
+
+.cart_totals .coupons th.amount { text-align: left; }
+
+.woocommerce table.shop_table { font-size: .75em !important; }
+.woocommerce table.shop_table .button { height: 30px; }
+.woocommerce table.shop_table .input-text { height: 30px; }
+
 .woocommerce-cart .woocommerce { background: #fff; }
 .woocommerce-cart .cart-empty, .woocommerce-cart .return-to-shop { padding: 1em; }
 .woocommerce-cart .wc-proceed-to-checkout { padding: 1em !important; }
@@ -202,7 +210,6 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
 .woocommerce-cart .coupon .input-text { height: 34px; width: 120px; }
 .woocommerce-cart table th, .woocommerce-cart table td { color: #000; }
 .woocommerce-cart table.cart .product-thumbnail a img { width: 100px; height: 100px; }
-.woocommerce-cart table.cart td.actions .input-text + .button { float: left !important; }
 .woocommerce-cart table.cart .product-name { color: black; }
 .woocommerce-cart table.cart .product-name a { color: black; }
 .woocommerce-cart table.cart .product-name a:hover, .woocommerce-cart table.cart .product-name a:focus { color: #FF0000; }
@@ -223,7 +230,8 @@ header .menu-toggle.is-active span::after { bottom: 0; transform: rotate(-45deg)
 .woocommerce-checkout .payment_method_paypal .about_paypal { color: #000; }
 .woocommerce-checkout .payment_method_paypal .about_paypal:hover { color: #FF0000; }
 
-@media screen and (min-width: 768px) { .woocommerce table.cart td.actions .input-text, .woocommerce table.cart td.actions input { width: 150px !important; } }
+@media screen and (min-width: 768px) { .woocommerce table.cart td.actions .input-text, .woocommerce table.cart td.actions input { width: 150px !important; }
+  .woocommerce table.shop_table { font-size: .95em !important; } }
 .container { margin-right: auto; margin-left: auto; padding-left: 10px; padding-right: 10px; }
 .container:before, .container:after { content: " "; display: table; }
 .container:after { clear: both; }
