@@ -118,13 +118,26 @@ blockquote {
   }
 }
 
+.shop-section {
+  padding-top: 25px;
+  padding-bottom: 20px;
+
+  li {
+    padding-bottom: 15px;
+
+    a {
+      display: block;
+    }
+  }
+}
+
 .contact-page {
   padding-top: 20px;
   padding-bottom: 30px;
 
   .section-content {
     min-height: 400px;
-    
+
     form {
       padding-top: 40px;
     }

@@ -80,6 +80,10 @@ blockquote { font-style: italic; border-left: 1px solid #808080; color: #808080;
 .galleries-section ul li { padding-bottom: 20px; }
 .galleries-section h4 { text-align: center; text-transform: uppercase; padding-top: 5px; font-size: 1.25em; }
 
+.shop-section { padding-top: 25px; padding-bottom: 20px; }
+.shop-section li { padding-bottom: 15px; }
+.shop-section li a { display: block; }
+
 .contact-page { padding-top: 20px; padding-bottom: 30px; }
 .contact-page .section-content { min-height: 400px; }
 .contact-page .section-content form { padding-top: 40px; }

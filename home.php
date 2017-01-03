@@ -54,34 +54,32 @@ Template Name: Home
     <h2 class="section-heading">Event Galleries</h2>
     <ul class="row">
 
+      <?php
+        $args = array(
+          'post_type' => 'snowboy_galleries',
+          'posts_per_page' => '3',
+          'order' => 'ASC'
+        );
 
+        $loop = new WP_Query( $args );
+        while ( $loop->have_posts() ) : $loop->the_post();
+          $pageSlug = $post->post_name;
 
-<?php
-  $args = array(
-    'post_type' => 'snowboy_galleries',
-    'posts_per_page' => '3',
-    'order' => 'ASC'
-  );
-
-  $loop = new WP_Query( $args );
-  while ( $loop->have_posts() ) : $loop->the_post();
-    $pageSlug = $post->post_name;
-
-    switch ($pageSlug) {
-      case 'urban':
-        $postCat = "urban";
-        $galleryUrl = "/galleries/urban/";
-        break;
-      case 'resort':
-        $postCat = "resort";
-        $galleryUrl = "/galleries/resort/";
-        break;
-      case 'skate':
-        $postCat = "skate";
-        $galleryUrl = "/galleries/skate/";
-        break;
-      }
-?>
+          switch ($pageSlug) {
+            case 'urban':
+              $postCat = "urban";
+              $galleryUrl = "/galleries/urban/";
+              break;
+            case 'resort':
+              $postCat = "resort";
+              $galleryUrl = "/galleries/resort/";
+              break;
+            case 'skate':
+              $postCat = "skate";
+              $galleryUrl = "/galleries/skate/";
+              break;
+            }
+      ?>
 
       <li class="col-xs-12 col-ms-4 col-sm-4">
         <a href="<?php echo $galleryUrl; ?>" class="gallery-link">
@@ -90,14 +88,44 @@ Template Name: Home
         </a>
       </li>
 
-<?php
-  endwhile; wp_reset_query();
-?>
+      <?php
+        endwhile; wp_reset_query();
+      ?>
     </ul>
   </div><!-- .section-content -->
 </section><!-- .home-galleries -->
 
 <?php include get_template_directory() . '/_/inc/modules/social.php'; ?>
+
+<section class="shop-section row">
+  <div class="section-content col-xs-12">
+    <h2 class="section-heading">Shop</h2>
+
+    <?php
+      $shopLinkImageLeft = get_field('snowboy_shop_image_left');
+      $shopLinkImageCenter = get_field('snowboy_shop_image_center');
+      $shopLinkImageRight = get_field('snowboy_shop_image_right');
+    ?>
+
+    <ul class="shop-link-image-list row">
+      <li class="col-xs-12 col-ms-4 col-sm-4">
+        <a href="/shop/" class="shop-section-link">
+          <img src="<?php echo $shopLinkImageLeft['url']; ?>" />
+        </a>
+      </li>
+      <li class="col-xs-12 col-ms-4 col-sm-4">
+        <a href="/shop/" class="shop-section-link">
+          <img src="<?php echo $shopLinkImageCenter['url']; ?>" />
+        </a>
+      </li>
+      <li class="col-xs-12 col-ms-4 col-sm-4">
+        <a href="/shop/" class="shop-section-link">
+          <img src="<?php echo $shopLinkImageRight['url']; ?>" />
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
 
 <section id="clients" class="clients-section row">
   <div class="section-content col-xs-12">

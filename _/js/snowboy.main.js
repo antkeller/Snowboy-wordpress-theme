@@ -6,9 +6,6 @@ var SNOWBOY = SNOWBOY || {};
 
 SNOWBOY.Main = {
 	config: {},
-	init: function () {
-		var self = this;
-	},
   init: function () {
 		var self, $body;
 		self = this;
@@ -35,7 +32,7 @@ SNOWBOY.Main = {
 			SNOWBOY.Main.utilities.pageScroll(url, 0.5);
 		});
 		//fade gallery images on hover
-		jQuery('#gallery .gallery-link img').each(function(){
+		jQuery('#gallery .gallery-link img, .shop-section li a img').each(function(){
 				jQuery(this).hover(function(){
 						jQuery(this).fadeTo(200, 0.75);
 				}, function(){

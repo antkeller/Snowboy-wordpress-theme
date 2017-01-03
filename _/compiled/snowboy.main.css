@@ -300,44 +300,58 @@ blockquote {
 }
 
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003121}}
+.shop-section {
+  padding-top: 25px;
+  padding-bottom: 20px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003125}}
+.shop-section li {
+  padding-bottom: 15px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003128}}
+.shop-section li a {
+  display: block;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003134}}
 .contact-page {
   padding-top: 20px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003125}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003138}}
 .contact-page .section-content {
   min-height: 400px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003141}}
 .contact-page .section-content form {
   padding-top: 40px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003134}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003147}}
 .shop-page {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003138}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003151}}
 .shop-page .section-content {
   min-height: 600px;
 }
 
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003144}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003157}}
   body {
     padding: 10px 10px 30px;
   }
 }
 @media screen and (min-width: 992px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003150}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003163}}
   body {
     padding-left: 50px;
     padding-right: 50px;
   }
 }
 @media screen and (min-width: 1200px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_global\.scss}line{font-family:\00003172}}
   body {
     padding-left: 80px;
     padding-right: 80px;
@@ -934,149 +948,157 @@ header .menu-toggle.is-active span::after {
   color: #FF0000 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003168}}
-.woocommerce table.cart .product-thumbnail,
-.woocommerce-page table.cart .product-thumbnail {
-  display: block !important;
-}
-
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003174}}
 .woocommerce table.shop_table td {
-  padding: 5px;
+  padding: 5px !important;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003177}}
 .woocommerce table.shop_table td dd {
   margin-left: 0 !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003182}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003184}}
+.cart_totals .coupons th.amount {
+  text-align: left;
+}
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003190}}
 .woocommerce table.shop_table {
   font-size: .75em !important;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003193}}
+.woocommerce table.shop_table .button {
+  height: 30px;
+}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003197}}
+.woocommerce table.shop_table .input-text {
+  height: 30px;
+}
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003188}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003204}}
 .woocommerce-cart .woocommerce {
   background: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003192}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003208}}
 .woocommerce-cart .cart-empty,
 .woocommerce-cart .return-to-shop {
   padding: 1em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003197}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003213}}
 .woocommerce-cart .wc-proceed-to-checkout {
   padding: 1em !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003202}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003218}}
 .woocommerce-cart .cart-subtotal th {
   padding-right: 7px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003224}}
 .woocommerce-cart .shipping th {
   padding-right: 7px !important;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003214}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003230}}
 .woocommerce-cart .shipping-message p {
   text-align: center;
   font-weight: 700;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003237}}
 .woocommerce-cart .coupon .input-text {
   height: 34px;
   width: 120px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003228}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003244}}
 .woocommerce-cart table th,
 .woocommerce-cart table td {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003236}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003252}}
 .woocommerce-cart table.cart .product-thumbnail a img {
   width: 100px;
   height: 100px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003247}}
-.woocommerce-cart table.cart td.actions .input-text + .button {
-  float: left !important;
-}
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003252}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003264}}
 .woocommerce-cart table.cart .product-name {
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003255}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003267}}
 .woocommerce-cart table.cart .product-name a {
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003258}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003270}}
 .woocommerce-cart table.cart .product-name a:hover, .woocommerce-cart table.cart .product-name a:focus {
   color: #FF0000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003265}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003277}}
 .woocommerce-cart table.cart .product-price {
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003269}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003281}}
 .woocommerce-cart table.cart .product-quantity {
   color: black;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003273}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003285}}
 .woocommerce-cart table.cart .product-subtotal {
   color: black;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003280}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003292}}
 .cart_totals {
   padding: 10px;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003284}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003296}}
 .woocommerce table.cart td.actions .input-text,
 .woocommerce table.cart td.actions input {
   width: 38% !important;
 }
 
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003291}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003303}}
 .woocommerce-checkout .woocommerce {
   background: #fff;
   padding: 20px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003295}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003307}}
 .woocommerce-checkout .woocommerce thead,
 .woocommerce-checkout .woocommerce td,
 .woocommerce-checkout .woocommerce th {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003301}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003313}}
 .woocommerce-checkout .woocommerce #customer_details {
   padding-bottom: 30px;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003305}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003317}}
 .woocommerce-checkout .woocommerce input.button.alt {
   background: #000;
   color: #fff;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003309}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003321}}
 .woocommerce-checkout .woocommerce input.button.alt:hover, .woocommerce-checkout .woocommerce input.button.alt:focus {
   background: #FF0000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003317}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003329}}
 .woocommerce-checkout .payment_method_paypal label {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003321}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003333}}
 .woocommerce-checkout .payment_method_paypal .about_paypal {
   color: #000;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003324}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003336}}
 .woocommerce-checkout .payment_method_paypal .about_paypal:hover {
   color: #FF0000;
 }
 
 @media screen and (min-width: 768px) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003332}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003344}}
   .woocommerce table.cart td.actions .input-text,
   .woocommerce table.cart td.actions input {
     width: 150px !important;
+  }
+
+@media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/components\/_shop\.scss}line{font-family:\00003349}}
+  .woocommerce table.shop_table {
+    font-size: .95em !important;
   }
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/Users\/tony\.keller\/Projects\/Snowboy-WordPress\/wp-content\/themes\/snowboy-wordpress-theme\/_\/css\/lib\/bootstrap\/_grid\.scss}line{font-family:\0000310}}
