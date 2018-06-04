@@ -4,7 +4,7 @@
 
  var SNOWBOY = SNOWBOY || {};
 
-SNOWBOY.FeaturedSlider = function(autoRotate) {
+SNOWBOY.FeaturedSlider = function() {
   this.config = {
 		dots: false,
 		loop: false
@@ -19,34 +19,36 @@ SNOWBOY.FeaturedSlider = function(autoRotate) {
 
 SNOWBOY.FeaturedSlider.prototype = {
   init: function () {
-		var self, carousel, responsiveSize;
+		var self, carousel;
 		self = this;
-		if ($(".featured-slider .owl-carousel").length) {
-			// set up owl carousel
-			carousel = $(".featured-slider .owl-carousel").owlCarousel({
-				items: 1,
-				dots: self.config.dots,
-				lazyLoad: true,
-				autoplay: true,
-				autoplayTimeout: 10000,
-				autoplayHoverPause: false,
-				loop: self.config.loop
-			});
-		}
-	},
-  // buildCarousel: function() {
-  //   var self = this;
-  //   // build new
-  //   self.carousel.owlCarousel({
-  //     autoplay: self.config.autoRotate,
-  //     autoplayHoverPause: false,
-  //     autoplayTimeout: 8000,
-  //     LazyLoad: true,
-  //     dots: true,
-  //     items: 1,
-  //     loop: true,
-  //     nav: false, //switch to true to add prev and next arrows to slides
-  //     navText: ['<span class="offscreen">prev</span>', '<span class="offscreen">next</span>']
-  //   });
-  // }
+    if ($('.featured-slider')) {
+  		// set up slick
+  		carousel = $(".featured-slider .slick").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        lazyLoad: 'ondemand',
+        dots: self.config.dots,
+        adaptiveHeight: false,
+        mobileFirst: true,
+        arrows: false,
+        responsive: [
+        {
+          breakpoint: 768,
+          settings: {
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"></button>',
+            nextArrow: '<button type="button" class="slick-next"></button>',
+            dots: self.config.dots
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            arrows: false
+          }
+        }]
+  		});
+  	}
+  }
 };
