@@ -97,7 +97,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	<?php endif; ?>
 
 	<div class="shipping-message">
-		<p>Free shipping on all orders of $40.00 or more!</p>
+		<p>Free shipping on all orders of $100.00 or more!</p>
 	</div>
 
 	<div class="wc-proceed-to-checkout">
