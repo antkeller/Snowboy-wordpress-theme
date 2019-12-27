@@ -22,8 +22,7 @@
 	<meta name="description" content="<?php bloginfo('description'); ?>" />
 	<meta name="keywords" content="snowboy, productions, events, snowboarding, skateboarding, surfing, skiing, rad, northwest, boardsport, shred" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="google-site-verification" content="XXXXXXXX" />
-	<?php if (is_search()) echo "\t" . '<meta name="robots" content="noindex, nofollow" />' . "\n"; ?>
+	<meta name="google-site-verification" content="MWkuiijXy6HtQbm0irx_P2VArTQd7QWnVJ8JMR3nZew" />
 	<meta property="og:title" content="<?php wp_title( '|', true, 'right' ); ?>" />
 	<meta property="og:description" content="<?php bloginfo('description'); ?>" />
 	<meta property="og:url" content="<?php the_permalink(); ?>" />
@@ -49,10 +48,9 @@
 		<header id="header" role="banner">
 			<div class="social-header">
 				<ul>
+	        <li title="Instagram" class="instagram"><a href="https://instagram.com/snowboyproductions/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/instagram-icon.png" alt="Instagram"/></a></li>
+	        <li title="Youtube" class="youtube"><a href="https://www.youtube.com/channel/UCgrQwk2Etivec7c4mZ17hcg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/youtube-icon.png" alt="Youtube"/></a></li>
 					<li class="cart-icon" title="Shopping Cart"><a href="/cart/"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-cart-icon.png" alt="Shopping cart"/></a></li>
-	        <li title="Instagram" class="instagram"><a href="https://instagram.com/snowboyproductions/" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/instagram-icon.png" alt="Twitter"/></a></li>
-	        <!-- <li title="Facebook" class="facebook"><a href="https://www.facebook.com/SNOWBOYproductions" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/facebook-icon.png" alt="Twitter"/></a></li>
-	        <li title="Twitter" class="twitter"><a href="https://twitter.com/snowboyus" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/_/img/twitter-icon.png" alt="Twitter"/></a></li> -->
 	      </ul>
 			</div>
 			<a id="primary-navigation" class="menu-toggle">
@@ -65,6 +63,7 @@
 				<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-logo.png" /></a></h1>
 				<div class="site-description">
 					<h3>Making shit radder today than it was yesterday... <span>since 1997.</span></h3>
+					<img src="<?php echo get_template_directory_uri(); ?>/_/img/snowboy-tagline.png" alt="making shit radder today than it was yesterday... since 1997." />
 				</div>
 			</div><!--.main-header-wrapper -->
 		</header>

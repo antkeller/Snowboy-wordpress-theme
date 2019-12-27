@@ -13,18 +13,25 @@ header {
 
     ul {
       display: inline-block;
-      padding-left: 5px;
       vertical-align: middle;
       padding-top: 6px;
 
       li {
         display: inline-block;
         height: 30px;
-        margin-left: 5px;
+        margin-left: 10px;
         width: 32px;
 
-        &.cart-icon {
-          margin-right: 20px;
+        &.youtube {
+          width: 43px;
+        }
+
+        a {
+          :hover,
+          :focus {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+          }
         }
       }
     }
@@ -66,6 +73,7 @@ header {
 
   .site-description {
     h3 {
+      display: none;
       font-family: $taglineFont;
       font-weight: normal;
       letter-spacing: 1px;
@@ -73,6 +81,12 @@ header {
       text-transform: uppercase;
       font-size: 1.25em;
       text-align: center;
+    }
+
+    img {
+      display: block;
+      width: 75%;
+      margin: 0 auto;
     }
   }
 
@@ -166,28 +180,9 @@ header {
   header {
     margin-top: 20px;
 
-    .menu-toggle {
-      display: none;
-    }
-
-    nav {
-      transition: none;
-      max-height: none;
-      opacity: 1;
-
-      .menu {
-        text-align: center;
-        padding-bottom: 20px;
-
-        li {
-          display: inline-block;
-
-          a {
-            padding: 5px;
-            font-size: .85em;
-            text-transform: uppercase;
-          }
-        }
+    .site-description {
+      img {
+        width: 60%;
       }
     }
   }
@@ -199,18 +194,40 @@ header {
       padding-bottom: 10px;
     }
 
+    .menu-toggle {
+      display: none;
+    }
+
     .main-header-wrapper {
       position: relative;
       clear: both;
 
       nav {
+        transition: none;
+        max-height: none;
+        opacity: 1;
         position: absolute;
-        top: -5px;
+        top: 0;
         right: 0;
 
         .menu {
           padding-bottom: 0;
           text-align: right;
+
+          li {
+            display: inline-block;
+
+            a {
+              padding: 5px;
+              font-size: .85em;
+              text-transform: uppercase;
+            }
+          }
+
+          // home link to hide on desktop
+          .hide-on-desktop {
+            display: none;
+          }
         }
       }
 
@@ -226,8 +243,13 @@ header {
         right: 0;
 
         h3 {
+          display: block;
           text-align: right;
           font-size: 1.03em;
+        }
+
+        img {
+          display: none;
         }
       }
     }

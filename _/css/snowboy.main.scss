@@ -19,7 +19,6 @@
 
 // Base
 @import "base/links";
-@import "base/grid";
 @import "base/fonts";
 @import "base/utility";
 
@@ -34,8 +33,9 @@
 
 // Libraries
 @import "lib/bootstrap";
-@import "lib/owl-carousel";
-@import "lib/owl-theme-snowboy";
+@import "lib/lightbox";
+@import "lib/slick";
+@import "lib/slick-theme";
 
 // Modules
 @import "modules/featured-slider";

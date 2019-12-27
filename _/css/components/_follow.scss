@@ -22,10 +22,21 @@
 
       li {
         display: inline-block;
-        margin-left: 5px;
-        height: 30px;
+        margin-left: 10px;
         width: 32px;
-        
+
+        &.youtube {
+          width: 43px;
+        }
+
+        a {
+          :hover,
+          :focus {
+            opacity: 0.75;
+            filter: alpha(opacity=75);
+          }
+        }
+
       }
     }
   }
